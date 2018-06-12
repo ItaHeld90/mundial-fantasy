@@ -1,0 +1,47 @@
+[
+	{
+		"position": "S",
+		"achievement": "Goal",
+		"score": 6
+    },
+    {
+        "position": "M",
+        "achievement": "Goal",
+		"score": 7
+    },
+    {
+        "position": "D",
+        "achievement": "Goal",
+        "score": 9
+    },
+    {
+		"position": "S",
+		"achievement": "Assist",
+		"score": 7
+    },
+    {
+        "position": "M",
+        "achievement": "Assist",
+		"score": 6
+    },
+    {
+        "position": "D",
+        "achievement": "Assist",
+        "score": 8
+    },
+    {
+		"position": "S",
+		"achievement": "Clean",
+		"score": 2
+    },
+    {
+        "position": "M",
+        "achievement": "Clean",
+		"score": 4
+    },
+    {
+        "position": "D",
+        "achievement": "Clean",
+        "score": 8
+    }
+]
