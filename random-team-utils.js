@@ -1,3 +1,5 @@
+const { times } = require('lodash');
+
 const budget = 100;
 const numPlayers = 10;
 
@@ -16,24 +18,30 @@ const rangeDefenders = {
     max: 5
 };
 
-function getRandomTeam(playersByPriceAndPosition) { 
+const formationOptions = [
+    { "D": 5, "M": 4, "S": 1 },
+    { "D": 5, "M": 3, "S": 2 },
+    { "D": 4, "M": 5, "S": 1 },
+    { "D": 4, "M": 4, "S": 2 },
+    { "D": 4, "M": 3, "S": 3 },
+    { "D": 3, "M": 5, "S": 2 },
+    { "D": 3, "M": 4, "S": 3 },
+    { "D": 3, "M": 3, "S": 4 },
+];
+
+function getRandomTeam(playersByPriceAndPosition) {
     const formation = getRandomFormation();
 }
 
 function getRandomFormation() {
-    const numStrikers = randomInRange(rangeStrikers);
-    const numMiddleFielders = randomInRange(rangeMiddleFielders);
-    const numDefenders = numPlayers - (numStrikers + numMiddleFielders);
-
-    return {
-        numStrikers,
-        numMiddleFielders,
-        numDefenders
-    };
+    return randomInArray(formationOptions);
 }
 
-function randomByPosition(range) {}
+function randomInArray(arr) {
+    const idx = randomInRange(0, arr.length - 1);
+    return arr[idx];
+}
 
-function randomInRange({min, max}) {
+function randomInRange({ min, max }) {
     return min + Math.floor(Math.random() * (max - min + 1));
 }
