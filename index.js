@@ -18,7 +18,7 @@ const playersWithXp = _(scorers)
 
 const topPlayersByPrice = _(playersWithXp)
 	.groupBy(({ Price }) => Price)
-	.mapValues(takeTopPlayers)
+	.mapValues(topPlayersByPosition)
 	.value();
 
 console.log(topPlayersByPrice);
@@ -26,11 +26,18 @@ console.log(topPlayersByPrice);
 // output the results
 // printResults(topPlayersByPrice);
 
-function takeTopPlayers(players) {
+function topPlayersByPosition(players) {
+	return _(players)
+		.groupBy(({ Position }) => Position)
+		.mapValues(players => takeTopPlayers(players, 5))
+		.value();
+}
+
+function takeTopPlayers(players, numTop) {
 	return _(players)
 		.orderBy(({ xp }) => xp, 'desc')
-		.take(10)
-		.value()
+		.take(numTop)
+		.value();
 }
 
 function calcPlayerXpByPrice(playerWithXp, xpPerPriceUnit, destAveragePrice) {
