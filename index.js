@@ -1,7 +1,8 @@
+const _ = require('lodash');
 const scorers = require('./data/scorers.json');
 const defense = require('./data/defense.json');
 const positionScores = require('./data/position-scores.json');
-const _ = require('lodash');
+const { getRandomTeam } = require('./random-team-utils');
 
 // calculate xp for each player
 const playersWithXp = _(scorers)
@@ -12,12 +13,13 @@ const playersWithXp = _(scorers)
 	}))
 	.value();
 
-const topPlayersByPrice = _(playersWithXp)
+const topPlayersByPriceAndPosition = _(playersWithXp)
 	.groupBy(({ Price }) => Price)
 	.mapValues(topPlayersByPosition)
 	.value();
 
-console.log(topPlayersByPrice);
+getRandomTeam(topPlayersByPriceAndPosition);
+// console.log(topPlayersByPrice);
 
 // output the results
 // printResults(topPlayersByPrice);
