@@ -16,8 +16,22 @@ const playersWithXp = _(scorers)
 	}))
 	.value();
 
+const topPlayersByPrice = _(playersWithXp)
+	.groupBy(({ Price }) => Price)
+	.mapValues(takeTopPlayers)
+	.value();
+
+console.log(topPlayersByPrice);
+
 // output the results
-printResults(playersWithXp);
+// printResults(topPlayersByPrice);
+
+function takeTopPlayers(players) {
+	return _(players)
+		.orderBy(({ xp }) => xp, 'desc')
+		.take(10)
+		.value()
+}
 
 function calcPlayerXpByPrice(playerWithXp, xpPerPriceUnit, destAveragePrice) {
 	const { xp, Price: price } = playerWithXp;
@@ -77,6 +91,6 @@ function groupTopByPosition(sortedPlayerRanks) {
 function printResults(playerResults) {
 	playerResults.forEach(
 		({ Name, Position, Price, xp, xpByPrice }, idx) => {
-			console.log(`${idx + 1})`, 'Name:', Name, 'xp:', xp, 'xpByPrice:', xpByPrice, 'Position:', Position, 'price:', Price);
+			console.log(`${idx + 1})`, 'Name:', Name, 'xp:', xpByPrice, 'Position:', Position, 'price:', Price);
 		});
 }
