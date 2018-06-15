@@ -2,7 +2,6 @@ const scorers = require('./data/scorers.json');
 const defense = require('./data/defense.json');
 const positionScores = require('./data/position-scores.json');
 const _ = require('lodash');
-const { min, max, over } = require('lodash');
 
 const budget = 100;
 const numPlayers = 10;
