@@ -3,9 +3,6 @@ const defense = require('./data/defense.json');
 const positionScores = require('./data/position-scores.json');
 const _ = require('lodash');
 
-const budget = 100;
-const numPlayers = 10;
-
 // calculate xp for each player
 const playersWithXp = _(scorers)
 	.filter(player => player.Position && player.Price)
