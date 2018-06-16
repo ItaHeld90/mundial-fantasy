@@ -35,13 +35,6 @@ function takeTopPlayers(players, numTop) {
 		.value();
 }
 
-function calcPlayerXpByPrice(playerWithXp, xpPerPriceUnit, destAveragePrice) {
-	const { xp, Price: price } = playerWithXp;
-
-	const priceDeviation = price - destAveragePrice;
-	return xp - (priceDeviation * xpPerPriceUnit);
-}
-
 function calcPlayerXP(player) {
 	const { Price: price, Position: position, Team: team, Anytime: goalOdds } = player;
 	const getPlayerScoreByAchievement = getPlayerScore(position);
@@ -69,30 +62,4 @@ function getPlayerScore(playerPosition) {
 				achievement === playerAchievement
 			))
 			.score
-}
-
-function groupTopByPosition(sortedPlayerRanks) {
-	const topScorers = _(sortedPlayerRanks)
-		.filter(({ Position }) => Position === 'S')
-		.take(5)
-		.value();
-
-	const topMiddleFielders = _(sortedPlayerRanks)
-		.filter(({ Position }) => Position === 'M')
-		.take(5)
-		.value();
-
-	const topDefenders = _(sortedPlayerRanks)
-		.filter(({ Position }) => Position === 'D')
-		.take(5)
-		.value();
-
-	printResults([...topScorers, ...topMiddleFielders, ...topDefenders]);
-}
-
-function printResults(playerResults) {
-	playerResults.forEach(
-		({ Name, Position, Price, xp, xpByPrice }, idx) => {
-			console.log(`${idx + 1})`, 'Name:', Name, 'xp:', xpByPrice, 'Position:', Position, 'price:', Price);
-		});
 }
