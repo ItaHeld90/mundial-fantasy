@@ -1,19 +1,12 @@
 const _ = require('lodash');
-const { mapValues, over, fill, identity, take } = require('lodash');
+const { mapValues, over, fill, identity, take, sample } = require('lodash');
+
+const { topPlayersByPositionAndPrice } = require('./index');
+const { formationOptions } = require('./team-utils');
 
 const budget = 100;
 const numPlayers = 10;
 const avgPlayerBudget = budget / numPlayers;
-
-const formationOptions = [
-    { "D": 5, "M": 4, "S": 1 },
-    { "D": 5, "M": 3, "S": 2 },
-    { "D": 4, "M": 5, "S": 1 },
-    { "D": 4, "M": 4, "S": 2 },
-    { "D": 4, "M": 3, "S": 3 },
-    { "D": 3, "M": 5, "S": 2 },
-    { "D": 3, "M": 4, "S": 3 },
-];
 
 function getRandomTeam(playersByPositionAndPrice) {
     const formation = getRandomFormation();
@@ -72,12 +65,7 @@ function getRandomBudgetByPos(formation) {
 }
 
 function getRandomFormation() {
-    return randomInArray(formationOptions);
-}
-
-function randomInArray(arr) {
-    const idx = randomInRange(0, arr.length - 1);
-    return arr[idx];
+    return sample(formationOptions);
 }
 
 function randomInRange(min, max) {

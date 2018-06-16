@@ -63,3 +63,7 @@ function getPlayerScore(playerPosition) {
 			))
 			.score
 }
+
+module.exports = {
+	topPlayersByPositionAndPrice
+};
