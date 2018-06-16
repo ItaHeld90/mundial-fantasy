@@ -2,7 +2,7 @@ const _ = require('lodash');
 const scorers = require('./data/scorers.json');
 const defense = require('./data/defense.json');
 const positionScores = require('./data/position-scores.json');
-const { getRandomTeam } = require('./random-team-utils');
+const { run } = require('./genetic-algo-runner');
 
 // calculate xp for each player
 const playersWithXp = _(scorers)
@@ -18,11 +18,7 @@ const topPlayersByPositionAndPrice = _(playersWithXp)
 	.mapValues(topPlayersByPrice)
 	.value();
 
-getRandomTeam(topPlayersByPositionAndPrice);
-// console.log(topPlayersByPositionAndPrice);
-
-// output the results
-// printResults(topPlayersByPrice);
+run(topPlayersByPositionAndPrice);
 
 function topPlayersByPrice(players) {
 	return _(players)
