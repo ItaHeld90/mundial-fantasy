@@ -32,6 +32,7 @@ function getRandomTeam(playersByPositionAndPrice) {
     return team;
 }
 
+// TODO: limit players by countries
 function getRandomPlayersByBudget(playersByPrice, numPlayersToPick, budget) {
     const prices = Object.keys(playersByPrice);
     const [minPrice, maxPrice] = over([Math.min, Math.max])(...prices);
