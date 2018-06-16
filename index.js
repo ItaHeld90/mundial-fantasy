@@ -6,27 +6,28 @@ const { getRandomTeam } = require('./random-team-utils');
 
 // calculate xp for each player
 const playersWithXp = _(scorers)
-	.filter(player => player.Position && player.Price)
+	.filter(player => player.Position && player.Price && player.Price !== "NA")
 	.map(player => ({
 		...player,
 		xp: calcPlayerXP(player)
 	}))
 	.value();
 
-const topPlayersByPriceAndPosition = _(playersWithXp)
-	.groupBy(({ Price }) => Price)
-	.mapValues(topPlayersByPosition)
+const topPlayersByPositionAndPrice = _(playersWithXp)
+	.groupBy(({ Position }) => Position)
+	.mapValues(topPlayersByPrice)
 	.value();
 
-getRandomTeam(topPlayersByPriceAndPosition);
-// console.log(topPlayersByPrice);
+getRandomTeam(topPlayersByPositionAndPrice);
+// console.log(topPlayersByPositionAndPrice);
 
 // output the results
 // printResults(topPlayersByPrice);
 
-function topPlayersByPosition(players) {
+function topPlayersByPrice(players) {
 	return _(players)
-		.groupBy(({ Position }) => Position)
+		.groupBy(({ Price }) => Price)
+		.pickBy(players => players.length > 0)
 		.mapValues(players => takeTopPlayers(players, 5))
 		.value();
 }
