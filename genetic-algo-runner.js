@@ -2,11 +2,12 @@ const _ = require('lodash');
 const { times, keyBy, pick, sampleSize, sumBy } = require('lodash');
 const uuid = require('uuid/v4');
 
-const { getRandomTeam } = require('./random-team-utils');
-const { getTeamPlayers, getTeamFormation, getTeamAvailablePositions } = require('./team-utils');
+const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
+const { getTeamPlayers, getTeamFormation } = require('./team-utils');
 const { topPlayersByPositionAndPrice } = require('./index');
 
 const NUM_GENERATION_TEAMS = 50;
+const MUTATION_SIZE = 2;
 
 function run(playersByPositionAndPrice) {
     const teams = keyBy(
@@ -35,18 +36,10 @@ function runGeneticAlgo(teams) {
 }
 
 function mutateTeam(team) {
-    const teamPlayers = getTeamPlayers(team);
-    const [teamPlayer1, teamPlayer2] = sampleSize(teamPlayers, 2);
-    
     const teamFormation = getTeamFormation(team);
-    const playersPriceSum = sumBy([teamPlayer1, teamPlayer2], player => player.Price);
-    const [posTeamPlayer1, posTeamPlayer2] = [teamPlayer1, teamPlayer2]
-        .map(({ Position }) => Position);
+    const { in: inMutation, out: outMutation } = getRandomFormationMutation(teamFormation, MUTATION_SIZE);
 
-    const availablePositions = getTeamAvailablePositions(team);
-
-    console.log(teamFormation);
-    console.log(availablePositions);
+    const teamPlayers = getTeamPlayers(team);
 }
 
 function getTeamTotalXp(team) {

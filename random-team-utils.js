@@ -2,7 +2,8 @@ const _ = require('lodash');
 const { mapValues, over, fill, identity, take, sample } = require('lodash');
 
 const { topPlayersByPositionAndPrice } = require('./index');
-const { formationOptions } = require('./team-utils');
+const { formationOptions, findMutationBetweenFormations } = require('./team-utils');
+const { getRandomInterpolation } = require('./utils');
 
 const budget = 100;
 const numPlayers = 10;
@@ -41,23 +42,6 @@ function getRandomPlayersByBudget(playersByPrice, numPlayersToPick, budget) {
     return pickedPlayers;
 }
 
-function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
-    let sourceAmount = targetSum - (numBuckets * minValue);
-    const arr = fill(Array(numBuckets), minValue);
-
-    while (sourceAmount > 0) {
-        const idx = randomInRange(0, arr.length - 1);
-        const numInstances = arr[idx];
-
-        if (numInstances < maxValue) {
-            arr[idx]++;
-            sourceAmount--;
-        }
-    }
-
-    return arr;
-}
-
 function getRandomBudgetByPos(formation) {
     // currently calculating random budget per position by
     // number of players times the average player's budget
@@ -68,10 +52,13 @@ function getRandomFormation() {
     return sample(formationOptions);
 }
 
-function randomInRange(min, max) {
-    return min + Math.floor(Math.random() * (max - min + 1));
+function getRandomFormationMutation(formation, mutationSize) {
+    const newFormation = getRandomFormation();
+    return findMutationBetweenFormations(formation, newFormation, mutationSize);
 }
 
 module.exports = {
-    getRandomTeam
+    getRandomTeam,
+    getRandomFormation,
+    getRandomFormationMutation
 };
