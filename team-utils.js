@@ -46,6 +46,12 @@ function getMaxPlayerForPos(pos) {
         .max()
 }
 
+//TODO: make this function more efficient
+function isPlayerInTeam(team, player) {
+    const teamPlayers = getTeamPlayers(team);
+    return teamPlayers.some(p => p.Name === player.Name);
+}
+
 function findMutationBetweenFormations(oldFormation, newFormation, mutationSize) {
     // calculate the visible mutation between the 2 formations
     const visibleMutation = assignWith({}, newFormation, oldFormation, subtract);
@@ -92,4 +98,5 @@ module.exports = {
     getTeamAvailablePositions,
     findMutationBetweenFormations,
     getTeamLineup,
+    isPlayerInTeam,
 };
