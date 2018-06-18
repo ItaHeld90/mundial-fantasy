@@ -1,8 +1,12 @@
 const _ = require('lodash');
-const { mapValues, over, fill, identity, take, sample } = require('lodash');
+const { mapValues, over, flatMap, identity, take, sample } = require('lodash');
 
 const { topPlayersByPositionAndPrice } = require('./index');
-const { formationOptions, findMutationBetweenFormations } = require('./team-utils');
+const {
+    formationOptions,
+    findMutationBetweenFormations,
+    teamByPlayers
+} = require('./team-utils');
 const { getRandomInterpolation } = require('./utils');
 
 const budget = 100;
@@ -15,15 +19,15 @@ function getRandomTeam(playersByPositionAndPrice) {
 
     let team = {};
 
-    [team["S"], team["M"], team["D"]] =
-        ["S", "M", "D"].map(pos =>
+    const teamPlayers =
+        flatMap(["S", "M", "D"], pos =>
             getRandomPlayersByBudget(playersByPositionAndPrice[pos],
                 formation[pos],
                 budgetByPos[pos]
             )
         );
 
-    return team;
+    return teamByPlayers(teamPlayers);
 }
 
 // TODO: limit players by countries

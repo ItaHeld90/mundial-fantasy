@@ -11,7 +11,8 @@ const {
     getTeamPlayers,
     getTeamFormation,
     getTeamLineup,
-    isPlayerInTeam
+    isPlayerInTeam,
+    subtitutePlayers,
 } = require('./team-utils');
 const { getRandomInterpolation } = require('./utils');
 
@@ -35,10 +36,8 @@ const playersByPositionAndPrice = _(playersWithXp)
     .value();
 
 function run() {
-    const teams = keyBy(
-        times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice)),
-        _ => uuid()
-    );
+    const teams =
+        times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice));
 
     runGeneticAlgo(teams);
 }
@@ -95,7 +94,8 @@ function mutateTeam(team) {
     const inPlayers = inMutationWithPrices
         .map(([pos, price]) => availablePlayers[pos][price].shift());
 
-    const teamPlayers = getTeamPlayers(team);
+    const mutatedTeam = subtitutePlayers(team, outPlayers, inPlayers);
+    return mutatedTeam;
 }
 
 function getTeamTotalXp(team) {

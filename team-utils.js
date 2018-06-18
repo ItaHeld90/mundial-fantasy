@@ -1,5 +1,16 @@
 const _ = require('lodash');
-const { subtract, pick, mapValues, assignWith, add, values } = require('lodash');
+const uuid = require('uuid/v4');
+
+const { 
+    subtract,
+    pick,
+    mapValues,
+    assignWith,
+    add,
+    values,
+    differenceWith,
+    groupBy,
+} = require('lodash');
 const { getRandomInterpolation } = require('./utils');
 
 const formationOptions = [
@@ -11,6 +22,13 @@ const formationOptions = [
     { "D": 3, "M": 5, "S": 2 },
     { "D": 3, "M": 4, "S": 3 },
 ];
+
+function teamByPlayers(players) {
+    return {
+        ...groupBy(players, p => p.Position),
+        id: uuid()
+    }
+}
 
 function getTeamPlayers(team) {
     return _(team)
@@ -49,7 +67,7 @@ function getMaxPlayerForPos(pos) {
 //TODO: make this function more efficient
 function isPlayerInTeam(team, player) {
     const teamPlayers = getTeamPlayers(team);
-    return teamPlayers.some(p => p.Name === player.Name);
+    return teamPlayers.some(p => isSamePlayer(p, player));
 }
 
 function findMutationBetweenFormations(oldFormation, newFormation, mutationSize) {
@@ -91,6 +109,18 @@ function findMutationBetweenFormations(oldFormation, newFormation, mutationSize)
     };
 }
 
+function isSamePlayer(player1, player2) {
+    return player1.Name === player2.Name;
+}
+
+function subtitutePlayers(team, outPlayers, inPlayers) {
+    const teamPlayers = getTeamPlayers(team);
+    const withoutOutPlayers = differenceWith(teamPlayers, outPlayers, isSamePlayer);
+
+    const newTeamPlayers = [...withoutOutPlayers, ...inPlayers];
+    return teamByPlayers(newTeamPlayers);
+}
+
 module.exports = {
     formationOptions,
     getTeamPlayers,
@@ -99,4 +129,6 @@ module.exports = {
     findMutationBetweenFormations,
     getTeamLineup,
     isPlayerInTeam,
+    subtitutePlayers,
+    teamByPlayers,
 };
