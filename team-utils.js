@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { subtract, pickBy, mapValues, assignWith, add, values } = require('lodash');
+const { subtract, pick, mapValues, assignWith, add, values } = require('lodash');
 const { getRandomInterpolation } = require('./utils');
 
 const formationOptions = [
@@ -27,6 +27,10 @@ function getTeamFormation(team) {
         .value();
 }
 
+function getTeamLineup(team) {
+    return pick(team, ["S", "M", "D"]);
+}
+
 function getTeamAvailablePositions(team) {
     const teamFormation = getTeamFormation(team);
 
@@ -46,7 +50,7 @@ function findMutationBetweenFormations(oldFormation, newFormation, mutationSize)
     // calculate the visible mutation between the 2 formations
     const visibleMutation = assignWith({}, newFormation, oldFormation, subtract);
     const diffPosInMutation = mapValues(visibleMutation, delta => Math.max(delta, 0));
-    const diffPosOutMutation = mapValues(visibleMutation, delta => Math.min(delta, 0));
+    const diffPosOutMutation = mapValues(visibleMutation, delta => Math.abs(Math.min(delta, 0)));
 
     // calculate visible mutation size between the 2 formations
     const visibleMutationSize = values(diffPosInMutation)
@@ -59,19 +63,17 @@ function findMutationBetweenFormations(oldFormation, newFormation, mutationSize)
     mutationGapTofill = mutationSize - visibleMutationSize;
 
     // calculate the mutation caused by mutating for the same position 
-    let samePosInMutation = {};
+    let samePosMutation = {};
     [
-        samePosInMutation["S"],
-        samePosInMutation["M"],
-        samePosInMutation["D"]
+        samePosMutation["S"],
+        samePosMutation["M"],
+        samePosMutation["D"]
     ] = getRandomInterpolation(mutationGapTofill, 3, 0, Infinity);
-
-    const samePosOutMutation = mapValues(samePosInMutation, size => -size);
 
     // calculate the final mutation
     const [inMutation, outMutation] =
         _([diffPosInMutation, diffPosOutMutation])
-            .zip([samePosInMutation, samePosOutMutation])
+            .zip([samePosMutation, samePosMutation])
             .map(([diffMutation, samePosMutation]) =>
                 assignWith({}, diffMutation, samePosMutation, add)
             )
@@ -88,5 +90,6 @@ module.exports = {
     getTeamPlayers,
     getTeamFormation,
     getTeamAvailablePositions,
-    findMutationBetweenFormations
+    findMutationBetweenFormations,
+    getTeamLineup,
 };
