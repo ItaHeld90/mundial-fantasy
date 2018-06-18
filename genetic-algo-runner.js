@@ -91,10 +91,9 @@ function mutateTeam(team) {
             )
         );
 
-    // const inPlayers =
-    //     _(outMutation)
-    //         .entries()
-    //         .flatMap(([pos, numPlayers]) => )
+    // SIDE EFFECT - removing player from available players
+    const inPlayers = inMutationWithPrices
+        .map(([pos, price]) => availablePlayers[pos][price].shift());
 
     const teamPlayers = getTeamPlayers(team);
 }
