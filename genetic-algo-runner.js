@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, keyBy, pick, sampleSize, sumBy, mapValues } = require('lodash');
+const { times, keyBy, pick, sampleSize, sumBy, mapValues, fill } = require('lodash');
 const uuid = require('uuid/v4');
 
 const scorers = require('./data/scorers.json');
@@ -77,9 +77,16 @@ function mutateTeam(team) {
     const inPlayersPrices =
         getRandomInterpolation(outPlayersPriceSum, outPlayers.length, 4, 15);
 
+    const inMutationWithPrices =
+        _(inMutation)
+            .entries()
+            .flatMap(([pos, numPlayers]) => fill(Array(numPlayers), pos))
+            .zip(inPlayersPrices)
+            .value();
+
     const availablePlayers =
         mapValues(playersByPositionAndPrice, playersByPrice =>
-            mapValues(playersByPrice, players => 
+            mapValues(playersByPrice, players =>
                 players.filter(p => !isPlayerInTeam(team, p))
             )
         );
