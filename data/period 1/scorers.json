@@ -1,0 +1,4489 @@
+[
+	{
+		"Name": "Eduardo Salvio",
+		"Anytime": "4.4000000000000004",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Romelu Lukaku",
+		"Anytime": "1.7",
+		"Team": "Belgium",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Eden Hazard",
+		"Anytime": "2.1",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "14"
+	},
+	{
+		"Name": "Harry Kane",
+		"Anytime": "1.75",
+		"Team": "England",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Fedor Smolov",
+		"Anytime": "1.75",
+		"Team": "Russia",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Lionel Messi",
+		"Anytime": "1.8",
+		"Team": "Argentina",
+		"Position": "S",
+		"Price": "15"
+	},
+	{
+		"Name": "Marcos Acuna",
+		"Anytime": "5.8",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Thomas Meunier",
+		"Anytime": "6.5",
+		"Team": "Belgium",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Neymar",
+		"Anytime": "1.83",
+		"Team": "Brazil",
+		"Position": "S",
+		"Price": "14"
+	},
+	{
+		"Name": "Raheem Sterling",
+		"Anytime": "2.25",
+		"Team": "England",
+		"Position": "M",
+		"Price": "12"
+	},
+	{
+		"Name": "Michy Batshuayi",
+		"Anytime": "1.91",
+		"Team": "Belgium",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Jamie Vardy",
+		"Anytime": "1.91",
+		"Team": "England",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Antoine Griezmann",
+		"Anytime": "1.95",
+		"Team": "France",
+		"Position": "S",
+		"Price": "14"
+	},
+	{
+		"Name": "Olivier Giroud",
+		"Anytime": "1.95",
+		"Team": "France",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Nacer Chadli",
+		"Anytime": "2.6",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Gabriel Jesus",
+		"Anytime": "1.95",
+		"Team": "Brazil",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Dele Alli",
+		"Anytime": "2.4500000000000002",
+		"Team": "England",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Jesse Lingard",
+		"Anytime": "2.4500000000000002",
+		"Team": "England",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Gonzalo Higuain",
+		"Anytime": "2.0499999999999998",
+		"Team": "Argentina",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Sergio Aguero",
+		"Anytime": "2.0499999999999998",
+		"Team": "Argentina",
+		"Position": "S",
+		"Price": "14"
+	},
+	{
+		"Name": "Edinson Cavani",
+		"Anytime": "2",
+		"Team": "Uruguay",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Luis Suarez",
+		"Anytime": "2",
+		"Team": "Uruguay",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Marcus Rashford",
+		"Anytime": "2.0499999999999998",
+		"Team": "England",
+		"Position": "S",
+		"Price": "11"
+	},
+	{
+		"Name": "Artem Dzyuba",
+		"Anytime": "2.25",
+		"Team": "Russia",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Kylian Mbappe",
+		"Anytime": "2.1",
+		"Team": "France",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Aleksei Miranchuk",
+		"Anytime": "2.62",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Djibril Sidibe",
+		"Anytime": "9",
+		"Team": "France",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Gabriel Mercado",
+		"Anytime": "9",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Nicolas Otamendi",
+		"Anytime": "9",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "10"
+	},
+	{
+		"Name": "Samuel Umtiti",
+		"Anytime": "9",
+		"Team": "France",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Thomas Lemar",
+		"Anytime": "2.8",
+		"Team": "France",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Dedryck Boyata",
+		"Anytime": "10",
+		"Team": "Belgium",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Roberto Firmino",
+		"Anytime": "2.1",
+		"Team": "Brazil",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Robert Lewandowski",
+		"Anytime": "2",
+		"Team": "Poland",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Vincent Kompany",
+		"Anytime": "11",
+		"Team": "Belgium",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Paulo Dybala",
+		"Anytime": "2.25",
+		"Team": "Argentina",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Joshua Kimmich",
+		"Anytime": "6",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "10"
+	},
+	{
+		"Name": "Mario Gomez",
+		"Anytime": "2.15",
+		"Team": "Germany",
+		"Position": "S",
+		"Price": "11"
+	},
+	{
+		"Name": "Timo Werner",
+		"Anytime": "2.15",
+		"Team": "Germany",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Adil Rami",
+		"Anytime": "11",
+		"Team": "France",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Benjamin Pavard",
+		"Anytime": "11",
+		"Team": "France",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Federico Fazio",
+		"Anytime": "11",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Raphael Varane",
+		"Anytime": "11",
+		"Team": "France",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Philippe Coutinho",
+		"Anytime": "2.75",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "13"
+	},
+	{
+		"Name": "Adnan Januzaj",
+		"Anytime": "3.1",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Thorgan Hazard",
+		"Anytime": "3.1",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Nabil Fekir",
+		"Anytime": "2.2999999999999998",
+		"Team": "France",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Danny Welbeck",
+		"Anytime": "2.25",
+		"Team": "England",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Jan Vertonghen",
+		"Anytime": "13",
+		"Team": "Belgium",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Toby Alderweireld",
+		"Anytime": "13",
+		"Team": "Belgium",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Aleksandr Samedov",
+		"Anytime": "3.25",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Fabian Delph",
+		"Anytime": "9",
+		"Team": "England",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Thomas Vermaelen",
+		"Anytime": "15",
+		"Team": "Belgium",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Dries Mertens",
+		"Anytime": "2.4",
+		"Team": "Belgium",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Corentin Tolisso",
+		"Anytime": "3.2",
+		"Team": "France",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Paul Pogba",
+		"Anytime": "3.2",
+		"Team": "France",
+		"Position": "M",
+		"Price": "11"
+	},
+	{
+		"Name": "Paulinho",
+		"Anytime": "2.9",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Radamel Falcao",
+		"Anytime": "2.25",
+		"Team": "Colombia",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "Kevin de Bruyne",
+		"Anytime": "3.3",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "13"
+	},
+	{
+		"Name": "Yannick Ferreira Carrasco",
+		"Anytime": "3.3",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Harry Maguire",
+		"Anytime": "9.5",
+		"Team": "England",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Mats Hummels",
+		"Anytime": "7",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "10"
+	},
+	{
+		"Name": "Thomas Muller",
+		"Anytime": "2.2999999999999998",
+		"Team": "Germany",
+		"Position": "S",
+		"Price": "13"
+	},
+	{
+		"Name": "Yerry Mina",
+		"Anytime": "6.5",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Danilo",
+		"Anytime": "8.5",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Marcelo",
+		"Anytime": "8.5",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "10"
+	},
+	{
+		"Name": "Leon Goretzka",
+		"Anytime": "2.87",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Mesut Ozil",
+		"Anytime": "2.87",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "13"
+	},
+	{
+		"Name": "Marcos Rojo",
+		"Anytime": "15",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Alan Dzagoev",
+		"Anytime": "3.5",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Aleksandr Golovin",
+		"Anytime": "3.5",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Maximiliano Gomez",
+		"Anytime": "2.37",
+		"Team": "Uruguay",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Aleksandar Mitrovic",
+		"Anytime": "2.2999999999999998",
+		"Team": "Serbia",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Angel di Maria",
+		"Anytime": "3.4",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "12"
+	},
+	{
+		"Name": "Jonas Hector",
+		"Anytime": "7.5",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Diego Costa",
+		"Anytime": "2.2999999999999998",
+		"Team": "Spain",
+		"Position": "S",
+		"Price": "12"
+	},
+	{
+		"Name": "James Rodriguez",
+		"Anytime": "2.87",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "12"
+	},
+	{
+		"Name": "Cristian Ansaldi",
+		"Anytime": "17",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Nicolas Tagliafico",
+		"Anytime": "17",
+		"Team": "Argentina",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Danny Rose",
+		"Anytime": "11",
+		"Team": "England",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Trent Alexander-Arnold",
+		"Anytime": "11",
+		"Team": "England",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Marcus Berg",
+		"Anytime": "2.2999999999999998",
+		"Team": "Sweden",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Julian Brandt",
+		"Anytime": "3",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Denis Cheryshev",
+		"Anytime": "3.5",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Aleksandar Prijovic",
+		"Anytime": "2.37",
+		"Team": "Serbia",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Johan Mojica",
+		"Anytime": "7.5",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Benjamin Mendy",
+		"Anytime": "21",
+		"Team": "France",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Lucas Hernandez",
+		"Anytime": "21",
+		"Team": "France",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Presnel Kimpembe",
+		"Anytime": "21",
+		"Team": "France",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Florian Thauvin",
+		"Anytime": "2.62",
+		"Team": "France",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Ousmane Dembele",
+		"Anytime": "2.62",
+		"Team": "France",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Mathias Ginter",
+		"Anytime": "8.5",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Niklas Sule",
+		"Anytime": "8.5",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Douglas Costa",
+		"Anytime": "3.3",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Willian",
+		"Anytime": "3.3",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "11"
+	},
+	{
+		"Name": "Marco Reus",
+		"Anytime": "2.5",
+		"Team": "Germany",
+		"Position": "S",
+		"Price": "11"
+	},
+	{
+		"Name": "Thiago Silva",
+		"Anytime": "11",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Mario Mandzukic",
+		"Anytime": "2.5",
+		"Team": "Croatia",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Aleksandr Erokhin",
+		"Anytime": "4.2",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Anton Miranchuk",
+		"Anytime": "4.5",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Yuri Zhirkov",
+		"Anytime": "5.5",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Marouane Fellaini",
+		"Anytime": "3.9",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "John Stones",
+		"Anytime": "15",
+		"Team": "England",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Rodrigo Moreno",
+		"Anytime": "2.5",
+		"Team": "Spain",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Daler Kuzyaev",
+		"Anytime": "5.8",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Isco",
+		"Anytime": "3.1",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "12"
+	},
+	{
+		"Name": "Antonio Rudiger",
+		"Anytime": "10",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Fagner",
+		"Anytime": "13",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Filipe Luis",
+		"Anytime": "13",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Joao Miranda",
+		"Anytime": "13",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Marquinhos",
+		"Anytime": "13",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Pedro Geromel",
+		"Anytime": "13",
+		"Team": "Brazil",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Kieran Trippier",
+		"Anytime": "17",
+		"Team": "England",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Kyle Walker",
+		"Anytime": "17",
+		"Team": "England",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Phil Jones",
+		"Anytime": "17",
+		"Team": "England",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Davinson Sanchez",
+		"Anytime": "9",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Ivan Perisic",
+		"Anytime": "3.3",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "11"
+	},
+	{
+		"Name": "Sergio Ramos",
+		"Anytime": "7.5",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "10"
+	},
+	{
+		"Name": "Carlos Bacca",
+		"Anytime": "2.62",
+		"Team": "Colombia",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Luka Jovic",
+		"Anytime": "2.6",
+		"Team": "Serbia",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Diego Godin",
+		"Anytime": "13",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Diego Laxalt",
+		"Anytime": "13",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Jose Gimenez",
+		"Anytime": "13",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Jose Izquierdo",
+		"Anytime": "3.4",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Blaise Matuidi",
+		"Anytime": "4.2",
+		"Team": "France",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Cristian Pavon",
+		"Anytime": "4.2",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Nikola Kalinic",
+		"Anytime": "2.7",
+		"Team": "Croatia",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Cristiano Ronaldo",
+		"Anytime": "2.4500000000000002",
+		"Team": "Portugal",
+		"Position": "S",
+		"Price": "15"
+	},
+	{
+		"Name": "Aleksandar Kolarov",
+		"Anytime": "8.5",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "David Silva",
+		"Anytime": "3.3",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "12"
+	},
+	{
+		"Name": "Marco Asensio",
+		"Anytime": "3.3",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Cristhian Stuani",
+		"Anytime": "2.8",
+		"Team": "Uruguay",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Sergei Ignashevich",
+		"Anytime": "6.5",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Yuri Gazinskiy",
+		"Anytime": "6.5",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Igor Smolnikov",
+		"Anytime": "10",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Manuel Lanzini",
+		"Anytime": "4.4000000000000004",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "NA"
+	},
+	{
+		"Name": "Guillermo Varela",
+		"Anytime": "15",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Martin Caceres",
+		"Anytime": "15",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Maxi Pereira",
+		"Anytime": "15",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Sebastian Coates",
+		"Anytime": "15",
+		"Team": "Uruguay",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Nicolai Jorgensen",
+		"Anytime": "2.62",
+		"Team": "Denmark",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Oscar Murillo",
+		"Anytime": "11",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Tin Jedvaj",
+		"Anytime": "11",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Marvin Plattenhardt",
+		"Anytime": "13",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Paolo Guerrero",
+		"Anytime": "2.6",
+		"Team": "Peru",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Youri Tielemans",
+		"Anytime": "4.75",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Mario Fernandes",
+		"Anytime": "10",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Andreas Granqvist",
+		"Anytime": "8.5",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Andrej Kramaric",
+		"Anytime": "2.87",
+		"Team": "Croatia",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Christian Eriksen",
+		"Anytime": "3.2",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Hakim Ziyech",
+		"Anytime": "3.5",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Cristian Zapata",
+		"Anytime": "12",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Duje Caleta-Car",
+		"Anytime": "12",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Frank Fabra",
+		"Anytime": "12",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "NA"
+	},
+	{
+		"Name": "Vedran Corluka",
+		"Anytime": "12",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Dusan Tadic",
+		"Anytime": "3.6",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Juan Cuadrado",
+		"Anytime": "3.8",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Juan Fernando Quintero",
+		"Anytime": "3.8",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Ruben Loftus-Cheek",
+		"Anytime": "4.4000000000000004",
+		"Team": "England",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Arkadiusz Milik",
+		"Anytime": "2.8",
+		"Team": "Poland",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Iago Aspas",
+		"Anytime": "2.9",
+		"Team": "Spain",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Kasper Dolberg",
+		"Anytime": "2.8",
+		"Team": "Denmark",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Roman Zobnin",
+		"Anytime": "12",
+		"Team": "Russia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Mikael Lustig",
+		"Anytime": "9.5",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Adem Ljajic",
+		"Anytime": "3.8",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Gaston Silva",
+		"Anytime": "23",
+		"Team": "Uruguay",
+		"Position": "",
+		"Price": ""
+	},
+	{
+		"Name": "Gerard Pique",
+		"Anytime": "11",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Jordi Alba",
+		"Anytime": "11",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "10"
+	},
+	{
+		"Name": "Martin Olsson",
+		"Anytime": "10",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Dejan Lovren",
+		"Anytime": "15",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Domagoj Vida",
+		"Anytime": "15",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Josip Pivaric",
+		"Anytime": "15",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Santiago Arias",
+		"Anytime": "15",
+		"Team": "Colombia",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Manuel Da Costa",
+		"Anytime": "11",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Fred",
+		"Anytime": "4.5999999999999996",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Sergej Milinkovic-Savic",
+		"Anytime": "4",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Julian Draxler",
+		"Anytime": "3.2",
+		"Team": "Germany",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Giovani Lo Celso",
+		"Anytime": "5.5",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Maximiliano Meza",
+		"Anytime": "5.5",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Nacho Fernandez",
+		"Anytime": "12",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Jerome Boateng",
+		"Anytime": "21",
+		"Team": "Germany",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Lukasz Teodorczyk",
+		"Anytime": "3",
+		"Team": "Poland",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Branislav Ivanovic",
+		"Anytime": "13",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Milan Rodic",
+		"Anytime": "13",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Taison",
+		"Anytime": "3.3",
+		"Team": "Brazil",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Ayoub El Kaabi",
+		"Anytime": "3.1",
+		"Team": "Morocco",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Khalid Boutaib",
+		"Anytime": "3.1",
+		"Team": "Morocco",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Ivan Strinic",
+		"Anytime": "17",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Ludwig Augustinsson",
+		"Anytime": "11",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Fakhreddine Ben Youssef",
+		"Anytime": "4.4000000000000004",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Isaac Thelin",
+		"Anytime": "3.1",
+		"Team": "Sweden",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "John Guidetti",
+		"Anytime": "3.1",
+		"Team": "Sweden",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Andreas Cornelius",
+		"Anytime": "3",
+		"Team": "Denmark",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Luka Modric",
+		"Anytime": "4.33",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Marcelo Brozovic",
+		"Anytime": "4.33",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Nabil Dirar",
+		"Anytime": "12",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Luis Muriel",
+		"Anytime": "3.25",
+		"Team": "Colombia",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Ever Banega",
+		"Anytime": "5.8",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Rodney Wallace",
+		"Anytime": "6.5",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Ante Rebic",
+		"Anytime": "3.3",
+		"Team": "Croatia",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Lucas Vazquez",
+		"Anytime": "4.2",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Renato Augusto",
+		"Anytime": "5",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Diafra Sakho",
+		"Anytime": "3",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Sadio Mane",
+		"Anytime": "3",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Steven N'Zonzi",
+		"Anytime": "6",
+		"Team": "France",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Achraf Hakimi",
+		"Anytime": "13",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Dusko Tosic",
+		"Anytime": "15",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Abel Aguilar",
+		"Anytime": "4.5",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Mateus Uribe",
+		"Anytime": "4.5",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Mehdi Carcela-Gonzalez",
+		"Anytime": "4.2",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Sime Vrsaljko",
+		"Anytime": "21",
+		"Team": "Croatia",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Pontus Jansson",
+		"Anytime": "13",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Axel Witsel",
+		"Anytime": "6.5",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Nacho Monreal",
+		"Anytime": "15",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Jakub Blaszczykowski",
+		"Anytime": "4",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Miguel Borja",
+		"Anytime": "3.4",
+		"Team": "Colombia",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Ilya Kutepov",
+		"Anytime": "15",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Mehdi Benatia",
+		"Anytime": "15",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Romain Saiss",
+		"Anytime": "15",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Ilkay Gundogan",
+		"Anytime": "5",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Toni Kroos",
+		"Anytime": "5",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "11"
+	},
+	{
+		"Name": "Emil Forsberg",
+		"Anytime": "4.4000000000000004",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Nemanja Radonjic",
+		"Anytime": "4.5999999999999996",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Sardar Azmoun",
+		"Anytime": "3.25",
+		"Team": "Iran",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Andrei Semenov",
+		"Anytime": "21",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Ola Toivonen",
+		"Anytime": "3.4",
+		"Team": "Sweden",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Nikola Milenkovic",
+		"Anytime": "19",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Kamil Grosicki",
+		"Anytime": "4.2",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Emil Krafth",
+		"Anytime": "15",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Ivan Rakitic",
+		"Anytime": "5",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "10"
+	},
+	{
+		"Name": "Cristian Rodriguez",
+		"Anytime": "5.5",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Jonathan Urretavizcaya",
+		"Anytime": "5.5",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Nahitan Nandez",
+		"Anytime": "5.5",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Younes Belhanda",
+		"Anytime": "4.5999999999999996",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Kamil Glik",
+		"Anytime": "12",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "NA"
+	},
+	{
+		"Name": "Lukasz Piszczek",
+		"Anytime": "12",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Viktor Claesson",
+		"Anytime": "4.5999999999999996",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Moussa Dembele",
+		"Anytime": "7.5",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Martin Braithwaite",
+		"Anytime": "3.4",
+		"Team": "Denmark",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Filip Kostic",
+		"Anytime": "3.6",
+		"Team": "Serbia",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Filip Helander",
+		"Anytime": "17",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Victor Lindelof",
+		"Anytime": "17",
+		"Team": "Sweden",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Antonio Rukavina",
+		"Anytime": "23",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Milos Veljkovic",
+		"Anytime": "23",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Uros Spajic",
+		"Anytime": "23",
+		"Team": "Serbia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Hamza Mendyl",
+		"Anytime": "19",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Alvaro Odriozola",
+		"Anytime": "21",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Cesar Azpilicueta",
+		"Anytime": "21",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Nordin Amrabat",
+		"Anytime": "4.8",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Sami Khedira",
+		"Anytime": "5.5",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Fernandinho",
+		"Anytime": "6",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "N'Golo Kante",
+		"Anytime": "7.5",
+		"Team": "France",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Marko Grujic",
+		"Anytime": "5",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Fedor Kudryashov",
+		"Anytime": "21",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Leander Dendoncker",
+		"Anytime": "8",
+		"Team": "Belgium",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Mohamed Salah",
+		"Anytime": "3.25",
+		"Team": "Egypt",
+		"Position": "S",
+		"Price": "11"
+	},
+	{
+		"Name": "Carlos Sanchez",
+		"Anytime": "6",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Giorgian De Arrascaeta",
+		"Anytime": "6",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Jefferson Farfan",
+		"Anytime": "3.4",
+		"Team": "Peru",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Raul Ruidiaz",
+		"Anytime": "3.4",
+		"Team": "Peru",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Karim Ansarifard",
+		"Anytime": "3.5",
+		"Team": "Iran",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Reza Ghoochannejhad",
+		"Anytime": "3.5",
+		"Team": "Iran",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Moussa Sow",
+		"Anytime": "3.4",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Keisuke Honda",
+		"Anytime": "3.7",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Lasse Schone",
+		"Anytime": "4.4000000000000004",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Pione Sisto",
+		"Anytime": "4.4000000000000004",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Daniel Colindres",
+		"Anytime": "4",
+		"Team": "Costa Rica",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Kelechi Iheanacho",
+		"Anytime": "3.3",
+		"Team": "Nigeria",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Andreas Christensen",
+		"Anytime": "12",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Jannick Vestergaard",
+		"Anytime": "12",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Simon Kjaer",
+		"Anytime": "12",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Aziz Bouhaddouz",
+		"Anytime": "3.75",
+		"Team": "Morocco",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Badr Banoun",
+		"Anytime": "23",
+		"Team": "Morocco",
+		"Position": "D",
+		"Price": "NA"
+	},
+	{
+		"Name": "Artur Jedrzejczyk",
+		"Anytime": "15",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Sebastian Rudy",
+		"Anytime": "6",
+		"Team": "Germany",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Piotr Zielinski",
+		"Anytime": "4.8",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Daniel Carvajal",
+		"Anytime": "29",
+		"Team": "Spain",
+		"Position": "D",
+		"Price": "9"
+	},
+	{
+		"Name": "Son Heung-min",
+		"Anytime": "3.5",
+		"Team": "South Korea",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Christian Cueva",
+		"Anytime": "4.33",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Mame Diouf",
+		"Anytime": "3.6",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Moussa Konate",
+		"Anytime": "3.6",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Koke",
+		"Anytime": "5.5",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Saul",
+		"Anytime": "5.5",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Yahya Al-Shehri",
+		"Anytime": "6",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Bartosz Bereszynski",
+		"Anytime": "17",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Thiago Cionek",
+		"Anytime": "17",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Odion Ighalo",
+		"Anytime": "3.5",
+		"Team": "Nigeria",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Amine Harit",
+		"Anytime": "5.5",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Yuya Osako",
+		"Anytime": "3.5",
+		"Team": "Japan",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Viktor Fischer",
+		"Anytime": "3.8",
+		"Team": "Denmark",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Kendall Waston",
+		"Anytime": "9.5",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Jimmy Durmaz",
+		"Anytime": "5.5",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Kim Shin-wook",
+		"Anytime": "3.7",
+		"Team": "South Korea",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Henrik Dalsgaard",
+		"Anytime": "15",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Jens Larsen",
+		"Anytime": "15",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Jonas Knudsen",
+		"Anytime": "15",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Mathias Zanka",
+		"Anytime": "15",
+		"Team": "Denmark",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Keita Balde Diao",
+		"Anytime": "3.75",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Andrija Zivkovic",
+		"Anytime": "6",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Koo Ja-cheol",
+		"Anytime": "4.5",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Bruno Fernandes",
+		"Anytime": "4.33",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Ashkan Dejagah",
+		"Anytime": "5",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Filip Bradaric",
+		"Anytime": "6.5",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Jefferson Lerma",
+		"Anytime": "6.5",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Milan Badelj",
+		"Anytime": "6.5",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Dawid Kownacki",
+		"Anytime": "4",
+		"Team": "Poland",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Mohammad Khanzadeh",
+		"Anytime": "15",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Marcus Rohden",
+		"Anytime": "5.8",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Shinji Kagawa",
+		"Anytime": "4.2",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Jan Bednarek",
+		"Anytime": "21",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Michal Pazdan",
+		"Anytime": "21",
+		"Team": "Poland",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Serigne Kara Mbodj",
+		"Anytime": "11",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Yussuf Poulsen",
+		"Anytime": "4",
+		"Team": "Denmark",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Paolo Hurtado",
+		"Anytime": "4.75",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Faycal Fajr",
+		"Anytime": "6",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Moubarak Boussoufa",
+		"Anytime": "6",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Casemiro",
+		"Anytime": "8",
+		"Team": "Brazil",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Maciej Rybus",
+		"Anytime": "5.5",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Lucas Biglia",
+		"Anytime": "11",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Eric Dier",
+		"Anytime": "9",
+		"Team": "England",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Hwang Hee-chan",
+		"Anytime": "3.9",
+		"Team": "South Korea",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Johan Venegas",
+		"Anytime": "3.9",
+		"Team": "Costa Rica",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Marco Urena",
+		"Anytime": "3.9",
+		"Team": "Costa Rica",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Marko Pjaca",
+		"Anytime": "4.5",
+		"Team": "Croatia",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Bryan Oviedo",
+		"Anytime": "11",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Francisco Calvo",
+		"Anytime": "11",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Celso Borges",
+		"Anytime": "4.8",
+		"Team": "Costa Rica",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Cristian Bolanos",
+		"Anytime": "4.8",
+		"Team": "Costa Rica",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Lee Jae-sung",
+		"Anytime": "4.8",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Lee Seung-woo",
+		"Anytime": "4.8",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Salif Sane",
+		"Anytime": "12",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Ashley Young",
+		"Anytime": "9.5",
+		"Team": "England",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Gary Cahill",
+		"Anytime": "9.5",
+		"Team": "England",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Jordan Henderson",
+		"Anytime": "9.5",
+		"Team": "England",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Andres Iniesta",
+		"Anytime": "6.5",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "11"
+	},
+	{
+		"Name": "Thiago",
+		"Anytime": "6.5",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Andy Polo",
+		"Anytime": "5",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Edison Flores",
+		"Anytime": "5",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Michael Krohn-Dehli",
+		"Anytime": "5.5",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Bryan Ruiz",
+		"Anytime": "4",
+		"Team": "Costa Rica",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Mehdi Torabi",
+		"Anytime": "5.5",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Lucas Torreira",
+		"Anytime": "8.5",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Anderson Santamaria",
+		"Anytime": "13",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Ramin Rezaeian",
+		"Anytime": "19",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Rouzbeh Cheshmi",
+		"Anytime": "19",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Shinji Okazaki",
+		"Anytime": "3.9",
+		"Team": "Japan",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Ricardo Quaresma",
+		"Anytime": "4.75",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Mateo Kovacic",
+		"Anytime": "7.5",
+		"Team": "Croatia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Oscar Hiljemark",
+		"Anytime": "6.5",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Andre Silva",
+		"Anytime": "4",
+		"Team": "Portugal",
+		"Position": "S",
+		"Price": "10"
+	},
+	{
+		"Name": "Park Joo-ho",
+		"Anytime": "12",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Ronald Matarrita",
+		"Anytime": "12",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Saliou Ciss",
+		"Anytime": "13",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Mehdi Taremi",
+		"Anytime": "4.33",
+		"Team": "Iran",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Mbaye Niang",
+		"Anytime": "4.2",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Javier Hernandez",
+		"Anytime": "3.9",
+		"Team": "Mexico",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Sofyan Amrabat",
+		"Anytime": "7",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Morteza Pouraliganji",
+		"Anytime": "23",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Pejman Montazeri",
+		"Anytime": "23",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Seyed Majid Hosseini",
+		"Anytime": "23",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Luka Milivojevic",
+		"Anytime": "7.5",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Goncalo Guedes",
+		"Anytime": "4.2",
+		"Team": "Portugal",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Vahid Amiri",
+		"Anytime": "6",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Alireza Jahanbakhsh",
+		"Anytime": "4.5",
+		"Team": "Iran",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Rafal Kurzawa",
+		"Anytime": "6.5",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Cheikh N'Doye",
+		"Anytime": "5.5",
+		"Team": "Senegal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Joel Campbell",
+		"Anytime": "4.33",
+		"Team": "Costa Rica",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Matias Vecino",
+		"Anytime": "10",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Ahmed Musa",
+		"Anytime": "4.2",
+		"Team": "Nigeria",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Alex Iwobi",
+		"Anytime": "4.2",
+		"Team": "Nigeria",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Simy Nwankwo",
+		"Anytime": "4.2",
+		"Team": "Nigeria",
+		"Position": "S",
+		"Price": "4"
+	},
+	{
+		"Name": "Wahbi Khazri",
+		"Anytime": "4.4000000000000004",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Vladimir Granat",
+		"Anytime": "21",
+		"Team": "Russia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Josip Drmic",
+		"Anytime": "4",
+		"Team": "Switzerland",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Victor Moses",
+		"Anytime": "5",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Seb Larsson",
+		"Anytime": "7.5",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Alberto Rodriguez",
+		"Anytime": "17",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Aldo Corzo",
+		"Anytime": "17",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Christian Ramos",
+		"Anytime": "17",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Luis Advincula",
+		"Anytime": "17",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Nilson Loyola",
+		"Anytime": "17",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Wilder Cartagena",
+		"Anytime": "17",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Milad Mohammadi",
+		"Anytime": "29",
+		"Team": "Iran",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Lukas Lerager",
+		"Anytime": "6.5",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Thomas Delaney",
+		"Anytime": "6.5",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Kalidou Koulibaly",
+		"Anytime": "17",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Moussa Wague",
+		"Anytime": "17",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Luis Tejada",
+		"Anytime": "4",
+		"Team": "Panama",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Xherdan Shaqiri",
+		"Anytime": "4.5999999999999996",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Mohammed Al-Sahlawi",
+		"Anytime": "4.2",
+		"Team": "Saudi Arabia",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Oribe Peralta",
+		"Anytime": "4.2",
+		"Team": "Mexico",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Ki Sung-yueng",
+		"Anytime": "5.8",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Bruno Alves",
+		"Anytime": "13",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Javier Mascherano",
+		"Anytime": "21",
+		"Team": "Argentina",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Maya Yoshida",
+		"Anytime": "11",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Giancarlo Gonzalez",
+		"Anytime": "17",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Go Yo-han",
+		"Anytime": "17",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Hong Chul",
+		"Anytime": "17",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Johnny Acosta",
+		"Anytime": "17",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Jung Seung-Hyun",
+		"Anytime": "17",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Kim Young-Gwon",
+		"Anytime": "17",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Oh Ban-suk",
+		"Anytime": "17",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Oscar Duarte",
+		"Anytime": "17",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Saman Ghoddos",
+		"Anytime": "7",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Haris Seferovic",
+		"Anytime": "4.33",
+		"Team": "Switzerland",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Mario Gavranovic",
+		"Anytime": "4.33",
+		"Team": "Switzerland",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Miguel Araujo",
+		"Anytime": "21",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Miguel Trauco",
+		"Anytime": "21",
+		"Team": "Peru",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Giovani dos Santos",
+		"Anytime": "5",
+		"Team": "Mexico",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Takashi Usami",
+		"Anytime": "4.5999999999999996",
+		"Team": "Japan",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Yoshinori Muto",
+		"Anytime": "4.5999999999999996",
+		"Team": "Japan",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Abdallah Said",
+		"Anytime": "5.5",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Gaku Shibasaki",
+		"Anytime": "5.5",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Mahmoud Hassan Trezeguet",
+		"Anytime": "5.5",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Mahmoud Kahraba",
+		"Anytime": "5.5",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Ramadan Sobhi",
+		"Anytime": "5.5",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Takashi Inui",
+		"Anytime": "5.5",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Rodrigo Bentancur",
+		"Anytime": "13",
+		"Team": "Uruguay",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Youssouf Sabaly",
+		"Anytime": "21",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Gelson Martins",
+		"Anytime": "4.75",
+		"Team": "Portugal",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Alfred Finnbogason",
+		"Anytime": "4.4000000000000004",
+		"Team": "Iceland",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Muhannad Asiri",
+		"Anytime": "4.5",
+		"Team": "Saudi Arabia",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Badou Ndiaye",
+		"Anytime": "6.5",
+		"Team": "Senegal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Andre Carrillo",
+		"Anytime": "5",
+		"Team": "Peru",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Ismaila Sarr",
+		"Anytime": "5",
+		"Team": "Senegal",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Blas Perez",
+		"Anytime": "4.33",
+		"Team": "Panama",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Gabriel Torres",
+		"Anytime": "4.33",
+		"Team": "Panama",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "William Troost-Ekong",
+		"Anytime": "13",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Ehsan Hajsafi",
+		"Anytime": "7.5",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Masoud Shojaei",
+		"Anytime": "7.5",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Ju Se-jong",
+		"Anytime": "6.5",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Randall Azofeifa",
+		"Anytime": "6.5",
+		"Team": "Costa Rica",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Hirving Lozano",
+		"Anytime": "4.5999999999999996",
+		"Team": "Mexico",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Marwan Mohsen",
+		"Anytime": "4.8",
+		"Team": "Egypt",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Miguel Layun",
+		"Anytime": "9.5",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Yun Young-sun",
+		"Anytime": "21",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "3"
+	},
+	{
+		"Name": "Tomoaki Makino",
+		"Anytime": "13",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Carlos Sanchez",
+		"Anytime": "12",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Wilmar Barrios",
+		"Anytime": "12",
+		"Team": "Colombia",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Oghenekaro Etebo",
+		"Anytime": "6",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Lamine Gassama",
+		"Anytime": "26",
+		"Team": "Senegal",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Ryota Oshima",
+		"Anytime": "6",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Jesus Gallardo",
+		"Anytime": "10",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Rafael Marquez",
+		"Anytime": "10",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Genki Haraguchi",
+		"Anytime": "5",
+		"Team": "Japan",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Marco Fabian",
+		"Anytime": "5.5",
+		"Team": "Mexico",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Bernardo Silva",
+		"Anytime": "6.5",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "11"
+	},
+	{
+		"Name": "Karim El Ahmadi",
+		"Anytime": "11",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Nemanja Matic",
+		"Anytime": "12",
+		"Team": "Serbia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Wataru Endo",
+		"Anytime": "15",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Yuto Nagatomo",
+		"Anytime": "15",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Tomi Juric",
+		"Anytime": "4.75",
+		"Team": "Australia",
+		"Position": "S",
+		"Price": "8"
+	},
+	{
+		"Name": "Grzegorz Krychowiak",
+		"Anytime": "9.5",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Karol Linetty",
+		"Anytime": "9.5",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Slawomir Peszko",
+		"Anytime": "9.5",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Gustav Svensson",
+		"Anytime": "11",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Carlos Vela",
+		"Anytime": "5",
+		"Team": "Mexico",
+		"Position": "S",
+		"Price": "9"
+	},
+	{
+		"Name": "Fahad Al-Muwallad",
+		"Anytime": "5",
+		"Team": "Saudi Arabia",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Raul Jimenez",
+		"Anytime": "5",
+		"Team": "Mexico",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Cristian Gamboa",
+		"Anytime": "29",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Ian Smith",
+		"Anytime": "29",
+		"Team": "Costa Rica",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Shikabala",
+		"Anytime": "6.5",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Jose Fonte",
+		"Anytime": "21",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Mario Rui Duarte",
+		"Anytime": "21",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Pepe",
+		"Anytime": "21",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Raphael Guerreiro",
+		"Anytime": "21",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Ricardo Pereira",
+		"Anytime": "21",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Moon Seon-min",
+		"Anytime": "7.5",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Manuel Fernandes",
+		"Anytime": "7",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Albert Gudmundsson",
+		"Anytime": "5",
+		"Team": "Iceland",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Saber Khalifa",
+		"Anytime": "5",
+		"Team": "Tunisia",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Brian Idowu",
+		"Anytime": "17",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "3"
+	},
+	{
+		"Name": "Elderson Echiejile",
+		"Anytime": "17",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Youssef Ait Bennasser",
+		"Anytime": "12",
+		"Team": "Morocco",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Blerim Dzemaili",
+		"Anytime": "5.8",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Gylfi Sigurdsson",
+		"Anytime": "5.8",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Alfred N'Diaye",
+		"Anytime": "8",
+		"Team": "Senegal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Tim Cahill",
+		"Anytime": "5.5",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Saeid Ezatollahi",
+		"Anytime": "9.5",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Ismael Diaz",
+		"Anytime": "5",
+		"Team": "Panama",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Abdullahi Shehu",
+		"Anytime": "19",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Chidozie Awaziem",
+		"Anytime": "19",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Leon Balogun",
+		"Anytime": "19",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Jonathan dos Santos",
+		"Anytime": "12",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Jacek Goralski",
+		"Anytime": "11",
+		"Team": "Poland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Amr Warda",
+		"Anytime": "7",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Albin Ekdal",
+		"Anytime": "13",
+		"Team": "Sweden",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Ricardo Rodriguez",
+		"Anytime": "11",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Lee Yong",
+		"Anytime": "41",
+		"Team": "South Korea",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Cheikhou Kouyate",
+		"Anytime": "8.5",
+		"Team": "Senegal",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Ruben Dias",
+		"Anytime": "26",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Sergio Busquets",
+		"Anytime": "15",
+		"Team": "Spain",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Jesus Corona",
+		"Anytime": "6.5",
+		"Team": "Mexico",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Joel Chukwuma Obi",
+		"Anytime": "7.5",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "John Ogu",
+		"Anytime": "7.5",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Joao Mario",
+		"Anytime": "8",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Ahmed Elmohamady",
+		"Anytime": "21",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Ayman Ashraf",
+		"Anytime": "21",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Omar Gaber",
+		"Anytime": "21",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Saad Samir",
+		"Anytime": "21",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "3"
+	},
+	{
+		"Name": "Yassine Meriah",
+		"Anytime": "12",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Renato Tapia",
+		"Anytime": "9.5",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Yoshimar Yotun",
+		"Anytime": "9.5",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Arnor Traustason",
+		"Anytime": "6.5",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Naim Sliti",
+		"Anytime": "6.5",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Saif-Eddine Khaoui",
+		"Anytime": "6.5",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Jamie MacLaren",
+		"Anytime": "5.5",
+		"Team": "Australia",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Kim Min-woo",
+		"Anytime": "6.5",
+		"Team": "South Korea",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Cedric",
+		"Anytime": "36",
+		"Team": "Portugal",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "William Kvist",
+		"Anytime": "12",
+		"Team": "Denmark",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Kenneth Omeruo",
+		"Anytime": "26",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Tyronne Ebuehi",
+		"Anytime": "26",
+		"Team": "Nigeria",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Bjorn Sigurdarson",
+		"Anytime": "5.8",
+		"Team": "Iceland",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Breel-Donald Embolo",
+		"Anytime": "5.8",
+		"Team": "Switzerland",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Jon Dadi Bodvarsson",
+		"Anytime": "5.8",
+		"Team": "Iceland",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Jose Andres Guardado",
+		"Anytime": "7",
+		"Team": "Mexico",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Hector Moreno",
+		"Anytime": "15",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Motaz Hawsawi",
+		"Anytime": "15",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Ahmed Fathy",
+		"Anytime": "26",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Ali Gabr",
+		"Anytime": "26",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Gen Shoji",
+		"Anytime": "26",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Naomichi Ueda",
+		"Anytime": "26",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Bassem Srarfi",
+		"Anytime": "7",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Steven Zuber",
+		"Anytime": "7",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Omid Ebrahimi",
+		"Anytime": "13",
+		"Team": "Iran",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Hiroki Sakai",
+		"Anytime": "29",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Hattan Bahbir",
+		"Anytime": "7.5",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Hector Herrera",
+		"Anytime": "7.5",
+		"Team": "Mexico",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Hussain Al-Mogahwi",
+		"Anytime": "7.5",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Taisir Al-Jassim",
+		"Anytime": "7.5",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "3"
+	},
+	{
+		"Name": "Andrew Nabbout",
+		"Anytime": "6",
+		"Team": "Australia",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Diego Reyes",
+		"Anytime": "17",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Edson Alvarez",
+		"Anytime": "17",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Fabian Schar",
+		"Anytime": "15",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Kari Arnason",
+		"Anytime": "15",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Michael Lang",
+		"Anytime": "15",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Jung Woo-young",
+		"Anytime": "11",
+		"Team": "South Korea",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Ahmed Hegazy",
+		"Anytime": "34",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Gotoku Sakai",
+		"Anytime": "34",
+		"Team": "Japan",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Mahmoud Hamdy",
+		"Anytime": "34",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Mohamed Abdel-Shafy",
+		"Anytime": "34",
+		"Team": "Egypt",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Salem Al-Dawsari",
+		"Anytime": "6.5",
+		"Team": "Saudi Arabia",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Pedro Aquino",
+		"Anytime": "12",
+		"Team": "Peru",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Idrissa Gana Gueye",
+		"Anytime": "12",
+		"Team": "Senegal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Anice Badri",
+		"Anytime": "6.5",
+		"Team": "Tunisia",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "Mansour Al-Harbi",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "3"
+	},
+	{
+		"Name": "Mohammed Al-Burayk",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Omar Hawsawi",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Osama Hawsawi",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "David Guzman",
+		"Anytime": "12",
+		"Team": "Costa Rica",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "John Obi Mikel",
+		"Anytime": "10",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Ogenyi Onazi",
+		"Anytime": "10",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Birkir Bjarnason",
+		"Anytime": "8",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Adrien Silva",
+		"Anytime": "11",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Ragnar Sigurdsson",
+		"Anytime": "17",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Samuel Fridjonsson",
+		"Anytime": "17",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Sverrir Ingason",
+		"Anytime": "17",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Edgar Yoel Barcenas",
+		"Anytime": "7.5",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Remo Freuler",
+		"Anytime": "8.5",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Joao Moutinho",
+		"Anytime": "12",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "9"
+	},
+	{
+		"Name": "Manuel Akanji",
+		"Anytime": "19",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Rami Bedoui",
+		"Anytime": "19",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "3"
+	},
+	{
+		"Name": "Stephan Lichtsteiner",
+		"Anytime": "19",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "8"
+	},
+	{
+		"Name": "Yasser Al-Shahrani",
+		"Anytime": "23",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Sam Morsy",
+		"Anytime": "11",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Dimitri Petratos",
+		"Anytime": "8",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "3"
+	},
+	{
+		"Name": "Mathew Leckie",
+		"Anytime": "8",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Tom Rogic",
+		"Anytime": "8",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Robbie Kruse",
+		"Anytime": "7",
+		"Team": "Australia",
+		"Position": "S",
+		"Price": "7"
+	},
+	{
+		"Name": "Abdiel Arroyo",
+		"Anytime": "7",
+		"Team": "Panama",
+		"Position": "S",
+		"Price": "5"
+	},
+	{
+		"Name": "William Carvalho",
+		"Anytime": "13",
+		"Team": "Portugal",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Yeltsin Tejeda",
+		"Anytime": "15",
+		"Team": "Costa Rica",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Mohamed Elneny",
+		"Anytime": "12",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Mohammed Kanno",
+		"Anytime": "10",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Ellyes Skhiri",
+		"Anytime": "9.5",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Johann Gudmundsson",
+		"Anytime": "9.5",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Rurik Gislason",
+		"Anytime": "9.5",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Erick Davis",
+		"Anytime": "15",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Michael Murillo",
+		"Anytime": "15",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Dylan Bronn",
+		"Anytime": "23",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Hordur Bjorgvin Magnusson",
+		"Anytime": "23",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Wilfred Ndidi",
+		"Anytime": "13",
+		"Team": "Nigeria",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Alberto Quintero",
+		"Anytime": "8.5",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Jose Luis Rodriguez",
+		"Anytime": "8.5",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Aziz Behich",
+		"Anytime": "17",
+		"Team": "Australia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Hotaru Yamaguchi",
+		"Anytime": "13",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Jackson Irvine",
+		"Anytime": "9",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Mile Jedinak",
+		"Anytime": "9",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Ali Al-Boleahi",
+		"Anytime": "34",
+		"Team": "Saudi Arabia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Carlos Salcedo",
+		"Anytime": "34",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Hugo Ayala",
+		"Anytime": "34",
+		"Team": "Mexico",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Salman Al-Faraj",
+		"Anytime": "11",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Aaron Mooy",
+		"Anytime": "9.5",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Daniel Arzani",
+		"Anytime": "9.5",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Ali Maaloul",
+		"Anytime": "29",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Birkir Mar Saevarsson",
+		"Anytime": "29",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Nico Elvedi",
+		"Anytime": "29",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Ghailene Chaalali",
+		"Anytime": "11",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Makoto Hasebe",
+		"Anytime": "15",
+		"Team": "Japan",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Armando Cooper",
+		"Anytime": "9.5",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Ricardo Avila",
+		"Anytime": "9.5",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "3"
+	},
+	{
+		"Name": "Jang Hyun-soo",
+		"Anytime": "11",
+		"Team": "South Korea",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Francois Moubandje",
+		"Anytime": "34",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Hamdi Nagguez",
+		"Anytime": "34",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Holmar Eyjolfsson",
+		"Anytime": "34",
+		"Team": "Iceland",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Johan Djourou",
+		"Anytime": "34",
+		"Team": "Switzerland",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Syam Ben Youssef",
+		"Anytime": "34",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Javier Aquino",
+		"Anytime": "9.5",
+		"Team": "Mexico",
+		"Position": "S",
+		"Price": "6"
+	},
+	{
+		"Name": "Oussama Haddadi",
+		"Anytime": "36",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "3"
+	},
+	{
+		"Name": "Yohan Benalouane",
+		"Anytime": "36",
+		"Team": "Tunisia",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Ferjani Sassi",
+		"Anytime": "12",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Mohamed Amine Ben Amor",
+		"Anytime": "12",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Tarek Hamed",
+		"Anytime": "17",
+		"Team": "Egypt",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Felipe Baloy",
+		"Anytime": "21",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Gabriel Gomez",
+		"Anytime": "11",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Valentin Pimentel",
+		"Anytime": "11",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Joshua Risdon",
+		"Anytime": "29",
+		"Team": "Australia",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Trent Sainsbury",
+		"Anytime": "29",
+		"Team": "Australia",
+		"Position": "D",
+		"Price": "7"
+	},
+	{
+		"Name": "Roman Torres",
+		"Anytime": "26",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "6"
+	},
+	{
+		"Name": "Aron Einar Gunnarsson",
+		"Anytime": "15",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Emil Hallfredsson",
+		"Anytime": "15",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Granit Xhaka",
+		"Anytime": "15",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "8"
+	},
+	{
+		"Name": "Mark Milligan",
+		"Anytime": "13",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Massimo Luongo",
+		"Anytime": "13",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "James Meredith",
+		"Anytime": "34",
+		"Team": "Australia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Matthew Jurman",
+		"Anytime": "34",
+		"Team": "Australia",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Fidel Escobar",
+		"Anytime": "29",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Luis Ovalle",
+		"Anytime": "29",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Olafur Ingi Skulason",
+		"Anytime": "17",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Abdullah Al-Khaibari",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "3"
+	},
+	{
+		"Name": "Abdullah Ateef",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "3"
+	},
+	{
+		"Name": "Abdulmalek Al-Khaibri",
+		"Anytime": "19",
+		"Team": "Saudi Arabia",
+		"Position": "M",
+		"Price": "3"
+	},
+	{
+		"Name": "Ahmed Khalil",
+		"Anytime": "19",
+		"Team": "Tunisia",
+		"Position": "M",
+		"Price": "4"
+	},
+	{
+		"Name": "Denis Zakaria",
+		"Anytime": "19",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Anibal Godoy",
+		"Anytime": "15",
+		"Team": "Panama",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Adolfo Machado",
+		"Anytime": "46",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "5"
+	},
+	{
+		"Name": "Harold Cummings",
+		"Anytime": "46",
+		"Team": "Panama",
+		"Position": "D",
+		"Price": "4"
+	},
+	{
+		"Name": "Ari Freyr Skulason",
+		"Anytime": "23",
+		"Team": "Iceland",
+		"Position": "M",
+		"Price": "5"
+	},
+	{
+		"Name": "Gelson Fernandes",
+		"Anytime": "23",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "6"
+	},
+	{
+		"Name": "Valon Behrami",
+		"Anytime": "29",
+		"Team": "Switzerland",
+		"Position": "M",
+		"Price": "7"
+	},
+	{
+		"Name": "Milos Degenek",
+		"Anytime": "34",
+		"Team": "Australia",
+		"Position": "M",
+		"Price": "4"
+	}
+]
