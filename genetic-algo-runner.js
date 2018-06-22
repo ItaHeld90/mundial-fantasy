@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, keyBy, pick, sampleSize, sumBy, mapValues, intersectionWith } = require('lodash');
+const { times, keyBy, pick, sampleSize, sumBy, mapValues, intersectionWith, flatMap } = require('lodash');
 const uuid = require('uuid/v4');
 
 const scorers = require('./data/scorers.json');
@@ -8,7 +8,6 @@ const positionScores = require('./data/position-scores.json');
 
 const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
 const {
-    getTeamPlayers,
     getTeamFormation,
     getTeamLineup,
     isPlayerInTeam,
@@ -16,8 +15,10 @@ const {
 } = require('./team-utils');
 const { getRandomInterpolation, sampleUpToSum } = require('./utils');
 
-const NUM_GENERATION_TEAMS = 20;
-const NUM_TEAMS_TOP_SELECTION = 5;
+const NUM_GENERATIONS = 10;
+const NUM_GENERATION_TEAMS = 12;
+const NUM_TEAMS_TOP_SELECTION = 3;
+const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
 const MUTATION_SIZE = 2;
 const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
 
@@ -39,10 +40,15 @@ function run() {
     const teams =
         times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice));
 
-    runGeneticAlgo(teams);
+    const topTeams = runGeneticAlgo(teams, 1);
+    console.log('done');
 }
 
-function runGeneticAlgo(teams) {
+function runGeneticAlgo(teams, generationCount) {
+    if (generationCount > NUM_GENERATIONS) {
+        return teams;
+    }
+
     const totalXps = _(teams)
         .map(team => ({ ...team, totalXp: getTeamTotalXp(team) }))
         .orderBy(({ totalXp }) => totalXp, 'desc')
@@ -54,6 +60,12 @@ function runGeneticAlgo(teams) {
         .value();
 
     topTeams = intersectionWith(teams, topTeamIds, (team, id) => team.id === id);
+
+    const topTeamsMutations =
+        flatMap(topTeams, team => times(NUM_OF_MUTATIONS, _ => mutateTeam(team)));
+
+    const nextTeams = [...topTeams, ...topTeamsMutations];
+    return runGeneticAlgo(nextTeams, ++generationCount);
 }
 
 function mutateTeam(team) {
@@ -72,9 +84,12 @@ function mutateTeam(team) {
 
     const availablePlayers =
         mapValues(playersByPositionAndPrice, playersByPrice =>
-            mapValues(playersByPrice, players =>
-                players.filter(p => !isPlayerInTeam(team, p))
-            )
+            _(playersByPrice)
+                .mapValues(players =>
+                    players.filter(p => !isPlayerInTeam(team, p))
+                )
+                .pickBy(players => players.length > 0)
+                .value()
         );
 
     const inPlayersSampleSettings = _(availablePlayers)
@@ -90,7 +105,7 @@ function mutateTeam(team) {
     // SIDE EFFECT - removing player from available players
     const inPlayers = _(inPlayersPrices)
         .entries()
-        .flatMap(([pos, prices]) => 
+        .flatMap(([pos, prices]) =>
             prices.map(price =>
                 availablePlayers[pos][price].shift()
             )
