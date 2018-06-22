@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, keyBy, pick, sampleSize, sumBy, mapValues, fill, mergeWith } = require('lodash');
+const { times, keyBy, pick, sampleSize, sumBy, mapValues, intersectionWith } = require('lodash');
 const uuid = require('uuid/v4');
 
 const scorers = require('./data/scorers.json');
@@ -44,19 +44,16 @@ function run() {
 
 function runGeneticAlgo(teams) {
     const totalXps = _(teams)
-        .mapValues(getTeamTotalXp)
-        .entries()
-        .orderBy(([, totalXp]) => totalXp, 'desc')
+        .map(team => ({ ...team, totalXp: getTeamTotalXp(team) }))
+        .orderBy(({ totalXp }) => totalXp, 'desc')
         .value();
 
     const topTeamIds = _(totalXps)
         .take(NUM_TEAMS_TOP_SELECTION)
-        .map(([id]) => id)
+        .map(({ id }) => id)
         .value();
 
-    topTeams = pick(teams, topTeamIds);
-
-    mutateTeam(Object.values(topTeams)[0]);
+    topTeams = intersectionWith(teams, topTeamIds, (team, id) => team.id === id);
 }
 
 function mutateTeam(team) {
