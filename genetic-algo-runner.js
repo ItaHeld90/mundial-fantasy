@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, keyBy, pick, sampleSize, sumBy, mapValues, fill } = require('lodash');
+const { times, keyBy, pick, sampleSize, sumBy, mapValues, fill, mergeWith } = require('lodash');
 const uuid = require('uuid/v4');
 
 const scorers = require('./data/scorers.json');
@@ -14,7 +14,7 @@ const {
     isPlayerInTeam,
     subtitutePlayers,
 } = require('./team-utils');
-const { getRandomInterpolation } = require('./utils');
+const { getRandomInterpolation, sampleUpToSum } = require('./utils');
 
 const NUM_GENERATION_TEAMS = 20;
 const NUM_TEAMS_TOP_SELECTION = 5;
@@ -66,22 +66,12 @@ function mutateTeam(team) {
     const teamLineUp = getTeamLineup(team);
 
     const outPlayers =
-        _(inMutation)
+        _(outMutation)
             .entries()
             .flatMap(([pos, numPlayers]) => sampleSize(teamLineUp[pos], numPlayers))
             .value();
 
     const outPlayersPriceSum = sumBy(outPlayers, ({ Price }) => Number(Price));
-    // TODO: use consts for min and max player price
-    const inPlayersPrices =
-        getRandomInterpolation(outPlayersPriceSum, outPlayers.length, 4, 15);
-
-    const inMutationWithPrices =
-        _(inMutation)
-            .entries()
-            .flatMap(([pos, numPlayers]) => fill(Array(numPlayers), pos))
-            .zip(inPlayersPrices)
-            .value();
 
     const availablePlayers =
         mapValues(playersByPositionAndPrice, playersByPrice =>
@@ -90,9 +80,25 @@ function mutateTeam(team) {
             )
         );
 
+    const inPlayersSampleSettings = _(availablePlayers)
+        .mapValues(playersByPrice => Object.keys(playersByPrice))
+        .entries()
+        .map(([pos, prices]) => ({ key: pos, arr: prices, numSamples: inMutation[pos] }))
+        .filter(({ numSamples }) => numSamples > 0)
+        .value();
+
+    const inPlayersPrices =
+        sampleUpToSum(inPlayersSampleSettings, outPlayersPriceSum);
+
     // SIDE EFFECT - removing player from available players
-    const inPlayers = inMutationWithPrices
-        .map(([pos, price]) => availablePlayers[pos][price].shift());
+    const inPlayers = _(inPlayersPrices)
+        .entries()
+        .flatMap(([pos, prices]) => 
+            prices.map(price =>
+                availablePlayers[pos][price].shift()
+            )
+        )
+        .value();
 
     const mutatedTeam = subtitutePlayers(team, outPlayers, inPlayers);
     return mutatedTeam;
