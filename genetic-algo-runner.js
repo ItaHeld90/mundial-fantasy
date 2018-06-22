@@ -13,11 +13,11 @@ const {
     isPlayerInTeam,
     subtitutePlayers,
 } = require('./team-utils');
-const { getRandomInterpolation, sampleUpToSum } = require('./utils');
+const { sampleUpToSum } = require('./utils');
 
-const NUM_GENERATIONS = 10;
-const NUM_GENERATION_TEAMS = 12;
-const NUM_TEAMS_TOP_SELECTION = 3;
+const NUM_GENERATIONS = 20;
+const NUM_GENERATION_TEAMS = 20;
+const NUM_TEAMS_TOP_SELECTION = 4;
 const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
 const MUTATION_SIZE = 2;
 const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
@@ -45,14 +45,15 @@ function run() {
 }
 
 function runGeneticAlgo(teams, generationCount) {
-    if (generationCount > NUM_GENERATIONS) {
-        return teams;
-    }
-
     const totalXps = _(teams)
         .map(team => ({ ...team, totalXp: getTeamTotalXp(team) }))
         .orderBy(({ totalXp }) => totalXp, 'desc')
         .value();
+
+    // if the genetic cycle is done - return the teams ordered by total xp
+    if (generationCount > NUM_GENERATIONS) {
+        return totalXps;
+    }
 
     const topTeamIds = _(totalXps)
         .take(NUM_TEAMS_TOP_SELECTION)
