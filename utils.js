@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { fill, flatMap, times, cloneDeep, sample, sum, groupBy } = require('lodash');
+const { fill, flatMap, times, cloneDeep, sample, sum } = require('lodash');
 
 function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
     let sourceAmount = targetSum - (numBuckets * minValue);
@@ -37,7 +37,7 @@ function sampleUpToSum(sampleSettings, expectedSum) {
 
     function getCombination(pointers) {
         const currSum = sum(
-            pointers.map(({ arr, idx }) => Number(arr[idx]))
+            pointers.map(({ arr, idx }) => arr[idx])
         );
 
         // if the sum gets below the expected sum - return the current combination

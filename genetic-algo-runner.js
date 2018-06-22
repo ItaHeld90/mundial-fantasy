@@ -2,9 +2,13 @@ const _ = require('lodash');
 const { times, keyBy, pick, sampleSize, sumBy, mapValues, intersectionWith, flatMap } = require('lodash');
 const uuid = require('uuid/v4');
 
-const scorers = require('./data/scorers.json');
-const defense = require('./data/defense.json');
-const positionScores = require('./data/position-scores.json');
+const period = 2;
+const dataRootPath = './data/';
+const rootPath = `${dataRootPath}/period ${period}/`;
+
+const scorers = require(`${rootPath}/scorers.json`);
+const defense = require(`${rootPath}/defense.json`);
+const positionScores = require(`${dataRootPath}/position-scores.json`);
 
 const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
 const {
@@ -15,15 +19,22 @@ const {
 } = require('./team-utils');
 const { sampleUpToSum } = require('./utils');
 
-const NUM_GENERATIONS = 20;
-const NUM_GENERATION_TEAMS = 20;
-const NUM_TEAMS_TOP_SELECTION = 4;
+const NUM_GENERATIONS = 1000;
+const NUM_GENERATION_TEAMS = 12;
+const NUM_TEAMS_TOP_SELECTION = 3;
 const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
 const MUTATION_SIZE = 2;
 const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
 
+// normalizing the players prices
+const normalizedScorers =
+    scorers.map(player => ({
+        ...player,
+        Price: Math.round(Number(player.Price))
+    }));
+
 // calculate xp for each player
-const playersWithXp = _(scorers)
+const playersWithXp = _(normalizedScorers)
     .filter(player => player.Position && player.Price && player.Price !== "NA")
     .map(player => ({
         ...player,
@@ -41,7 +52,7 @@ function run() {
         times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice));
 
     const topTeams = runGeneticAlgo(teams, 1);
-    console.log('done');
+    console.log(topTeams[0]);
 }
 
 function runGeneticAlgo(teams, generationCount) {
@@ -94,7 +105,11 @@ function mutateTeam(team) {
         );
 
     const inPlayersSampleSettings = _(availablePlayers)
-        .mapValues(playersByPrice => Object.keys(playersByPrice))
+        // getting all the players prices in a numeric form
+        .mapValues(playersByPrice =>
+            Object.keys(playersByPrice)
+                .map(price => Number(price))
+            )
         .entries()
         .map(([pos, prices]) => ({ key: pos, arr: prices, numSamples: inMutation[pos] }))
         .filter(({ numSamples }) => numSamples > 0)
