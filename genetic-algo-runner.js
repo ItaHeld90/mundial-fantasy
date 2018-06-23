@@ -1,13 +1,20 @@
 const _ = require('lodash');
 const { times, sum, sampleSize, sumBy, mapValues, intersectionWith, flatMap } = require('lodash');
 
-const period = 1;
-const dataRootPath = './data/';
-const rootPath = `${dataRootPath}/period ${period}/`;
+const {
+    rootPath,
+    dataRootPath,
+    NUM_GENERATIONS,
+    NUM_GENERATION_TEAMS,
+    NUM_TEAMS_TOP_SELECTION,
+    NUM_OF_MUTATIONS,
+    MUTATION_SIZE,
+    TOP_PLAYERS_PER_POS_AND_PRICE, 
+} = require('./settings');
 
-const scorers = require(`${rootPath}/scorers.json`);
-const defense = require(`${rootPath}/defense.json`);
-const positionScores = require(`${dataRootPath}/position-scores.json`);
+const scorers = require(`${dataRootPath}/scorers.json`);
+const defense = require(`${dataRootPath}/defense.json`);
+const positionScores = require(`${rootPath}/position-scores.json`);
 
 const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
 const {
@@ -19,13 +26,7 @@ const {
 } = require('./team-utils');
 const { sampleUpToSum, monteCarloRandom } = require('./utils');
 
-const NUM_GENERATIONS = 1000;
-const NUM_GENERATION_TEAMS = 12;
-const NUM_TEAMS_TOP_SELECTION = 3;
-const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
-const MUTATION_SIZE = 2;
-
-const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
+// Start Program
 
 // normalizing the players prices
 const normalizedScorers =
