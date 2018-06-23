@@ -4,6 +4,7 @@ const { times, sum, sampleSize, sumBy, mapValues, intersectionWith, flatMap } = 
 const {
     rootPath,
     dataRootPath,
+    budget: totalBudget,
     NUM_GENERATIONS,
     NUM_GENERATION_TEAMS,
     NUM_TEAMS_TOP_SELECTION,
@@ -103,7 +104,7 @@ function mutateTeam(team) {
     // calculate in players budget
     const teamWorth = getTeamWorth(team) - outPlayersPriceSum;
     const numInPlayers = sum(Object.values(inMutation));
-    const inPlayersBudget = getInPlayersBudget(numInPlayers, teamWorth, 100); // TODO: send real budget
+    const inPlayersBudget = getInPlayersBudget(numInPlayers, teamWorth, totalBudget);
 
     // calculate in players prices
     const availablePlayers =

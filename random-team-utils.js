@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const { mapValues, over, flatMap, identity, take, sample } = require('lodash');
 
-const { topPlayersByPositionAndPrice } = require('./index');
+const { budget, numPlayers } = require('./settings'); 
 const {
     formationOptions,
     findMutationBetweenFormations,
@@ -9,8 +9,6 @@ const {
 } = require('./team-utils');
 const { getRandomInterpolation } = require('./utils');
 
-const budget = 100;
-const numPlayers = 10;
 const avgPlayerBudget = budget / numPlayers;
 
 function getRandomTeam(playersByPositionAndPrice) {
