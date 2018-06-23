@@ -1,8 +1,7 @@
 const _ = require('lodash');
-const { times, keyBy, pick, sampleSize, sumBy, mapValues, intersectionWith, flatMap } = require('lodash');
-const uuid = require('uuid/v4');
+const { times, sum, sampleSize, sumBy, mapValues, intersectionWith, flatMap } = require('lodash');
 
-const period = 2;
+const period = 1;
 const dataRootPath = './data/';
 const rootPath = `${dataRootPath}/period ${period}/`;
 
@@ -16,14 +15,16 @@ const {
     getTeamLineup,
     isPlayerInTeam,
     subtitutePlayers,
+    getTeamWorth,
 } = require('./team-utils');
-const { sampleUpToSum } = require('./utils');
+const { sampleUpToSum, monteCarloRandom } = require('./utils');
 
 const NUM_GENERATIONS = 1000;
 const NUM_GENERATION_TEAMS = 12;
 const NUM_TEAMS_TOP_SELECTION = 3;
 const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
 const MUTATION_SIZE = 2;
+
 const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
 
 // normalizing the players prices
@@ -66,6 +67,7 @@ function runGeneticAlgo(teams, generationCount) {
         return totalXps;
     }
 
+    // get the top teams
     const topTeamIds = _(totalXps)
         .take(NUM_TEAMS_TOP_SELECTION)
         .map(({ id }) => id)
@@ -73,9 +75,11 @@ function runGeneticAlgo(teams, generationCount) {
 
     topTeams = intersectionWith(teams, topTeamIds, (team, id) => team.id === id);
 
+    // perform mutations
     const topTeamsMutations =
         flatMap(topTeams, team => times(NUM_OF_MUTATIONS, _ => mutateTeam(team)));
 
+    // continue to the next generation with the newly created teams
     const nextTeams = [...topTeams, ...topTeamsMutations];
     return runGeneticAlgo(nextTeams, ++generationCount);
 }
@@ -86,6 +90,7 @@ function mutateTeam(team) {
 
     const teamLineUp = getTeamLineup(team);
 
+    // get random players to take out of the team
     const outPlayers =
         _(outMutation)
             .entries()
@@ -94,6 +99,12 @@ function mutateTeam(team) {
 
     const outPlayersPriceSum = sumBy(outPlayers, ({ Price }) => Number(Price));
 
+    // calculate in players budget
+    const teamWorth = getTeamWorth(team) - outPlayersPriceSum;
+    const numInPlayers = sum(Object.values(inMutation));
+    const inPlayersBudget = getInPlayersBudget(numInPlayers, teamWorth, 100); // TODO: send real budget
+
+    // calculate in players prices
     const availablePlayers =
         mapValues(playersByPositionAndPrice, playersByPrice =>
             _(playersByPrice)
@@ -109,27 +120,34 @@ function mutateTeam(team) {
         .mapValues(playersByPrice =>
             Object.keys(playersByPrice)
                 .map(price => Number(price))
-            )
+        )
         .entries()
         .map(([pos, prices]) => ({ key: pos, arr: prices, numSamples: inMutation[pos] }))
         .filter(({ numSamples }) => numSamples > 0)
         .value();
 
-    const inPlayersPrices =
-        sampleUpToSum(inPlayersSampleSettings, outPlayersPriceSum);
+    const inPlayersPrices = sampleUpToSum(inPlayersSampleSettings, inPlayersBudget);
 
-    // SIDE EFFECT - removing player from available players
+    // get the players to join the team
     const inPlayers = _(inPlayersPrices)
         .entries()
         .flatMap(([pos, prices]) =>
             prices.map(price =>
+                // SIDE EFFECT - removing player from available players
                 availablePlayers[pos][price].shift()
             )
         )
         .value();
 
+    // perform subtitution and return the newly created team
     const mutatedTeam = subtitutePlayers(team, outPlayers, inPlayers);
     return mutatedTeam;
+}
+
+function getInPlayersBudget(numInPlayers, teamWorth, totalBudget) {
+    const inPlayersMinBudget = numInPlayers * 6; // TODO: calculate real min budget
+    const spareBudget = totalBudget - teamWorth;
+    return monteCarloRandom(inPlayersMinBudget, spareBudget, num => Math.pow(num, 2));
 }
 
 function getTeamTotalXp(team) {

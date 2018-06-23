@@ -17,8 +17,6 @@ function getRandomTeam(playersByPositionAndPrice) {
     const formation = getRandomFormation();
     const budgetByPos = getRandomBudgetByPos(formation);
 
-    let team = {};
-
     const teamPlayers =
         flatMap(["S", "M", "D"], pos =>
             getRandomPlayersByBudget(playersByPositionAndPrice[pos],

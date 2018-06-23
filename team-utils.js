@@ -121,6 +121,13 @@ function subtitutePlayers(team, outPlayers, inPlayers) {
     return teamByPlayers(newTeamPlayers);
 }
 
+function getTeamWorth(team) {
+    const teamPlayers = getTeamPlayers(team);
+    return _(teamPlayers)
+        .map(player => player.Price)
+        .sum();
+}
+
 module.exports = {
     formationOptions,
     getTeamPlayers,
@@ -131,4 +138,5 @@ module.exports = {
     isPlayerInTeam,
     subtitutePlayers,
     teamByPlayers,
+    getTeamWorth,
 };
