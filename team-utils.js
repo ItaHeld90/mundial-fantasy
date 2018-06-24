@@ -1,7 +1,8 @@
 const _ = require('lodash');
 const uuid = require('uuid/v4');
 
-const { 
+const { GK_PROBABILITY_FOR_SUBTITUTION } = require('./settings');
+const {
     subtract,
     pick,
     mapValues,
@@ -31,8 +32,7 @@ function teamByPlayers(players) {
 }
 
 function getTeamPlayers(team) {
-    return _(team)
-        .pick(["S", "M", "D"])
+    return _(getTeamLineup(team))
         .values()
         .flatten()
         .value();
@@ -46,7 +46,7 @@ function getTeamFormation(team) {
 }
 
 function getTeamLineup(team) {
-    return pick(team, ["S", "M", "D"]);
+    return pick(team, ["S", "M", "D", "GK"]);
 }
 
 function getTeamAvailablePositions(team) {
@@ -86,12 +86,17 @@ function findMutationBetweenFormations(oldFormation, newFormation, mutationSize)
 
     mutationGapTofill = mutationSize - visibleMutationSize;
 
-    // calculate the mutation caused by mutating for the same position 
-    let samePosMutation = {};
+    // calculate the mutation caused by mutating for the same position
+    let samePosMutation = {
+        // the goal keeper will get subtituted according to the configured probability 
+        "GK": Math.random() < GK_PROBABILITY_FOR_SUBTITUTION ? 1 : 0
+    };
+
+    // Caluculate same position mutation
     [
         samePosMutation["S"],
         samePosMutation["M"],
-        samePosMutation["D"]
+        samePosMutation["D"],
     ] = getRandomInterpolation(mutationGapTofill, 3, 0, Infinity);
 
     // calculate the final mutation

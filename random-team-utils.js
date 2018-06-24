@@ -12,11 +12,14 @@ const { getRandomInterpolation } = require('./utils');
 const avgPlayerBudget = budget / numPlayers;
 
 function getRandomTeam(playersByPositionAndPrice) {
-    const formation = getRandomFormation();
+    const formation = {
+        "GK": 1,
+        ...getRandomFormation()
+    }
     const budgetByPos = getRandomBudgetByPos(formation);
 
     const teamPlayers =
-        flatMap(["S", "M", "D"], pos =>
+        flatMap(["GK", "S", "M", "D"], pos =>
             getRandomPlayersByBudget(playersByPositionAndPrice[pos],
                 formation[pos],
                 budgetByPos[pos]

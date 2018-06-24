@@ -54,8 +54,7 @@ function run() {
     const results = _(topTeams)
         .take(10)
         .map(team => ({
-            names: _(team)
-                .pick(['D', 'M', 'S'])
+            names: _(getTeamLineup(team))
                 .mapValues(players => players.map(player => player.Name))
                 .value(),
 
@@ -137,7 +136,8 @@ function mutateTeam(team) {
         .entries()
         .flatMap(([pos, prices]) =>
             prices.map(price => [pos, price])
-        );
+        )
+        .value();
 
     // for every position and price pair find an available player to enter the team
     for (let [pos, price] of inPlayersPosPricePairs) {
