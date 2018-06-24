@@ -1,8 +1,8 @@
-const period = 2;
+const period = 3;
 const rootPath = './data/';
 const dataRootPath = `${rootPath}/period ${period}/`;
 
-const budget = 106;
+const budget = 104;
 const numPlayers = 10;
 
 const NUM_GENERATIONS = 3000;
