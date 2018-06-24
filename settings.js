@@ -2,12 +2,12 @@ const period = 2;
 const rootPath = './data/';
 const dataRootPath = `${rootPath}/period ${period}/`;
 
-const budget = 100;
+const budget = 106;
 const numPlayers = 10;
 
-const NUM_GENERATIONS = 1000;
-const NUM_GENERATION_TEAMS = 12;
-const NUM_TEAMS_TOP_SELECTION = 3;
+const NUM_GENERATIONS = 3000;
+const NUM_GENERATION_TEAMS = 20;
+const NUM_TEAMS_TOP_SELECTION = 4;
 const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
 const MUTATION_SIZE = 2;
 
