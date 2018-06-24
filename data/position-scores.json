@@ -15,6 +15,11 @@
         "score": 9
     },
     {
+        "position": "GK",
+        "achievement": "Goal",
+        "score": 10
+    },
+    {
 		"position": "S",
 		"achievement": "Assist",
 		"score": 7
@@ -30,6 +35,11 @@
         "score": 8
     },
     {
+        "position": "GK",
+        "achievement": "Assist",
+        "score": 10
+    },
+    {
 		"position": "S",
 		"achievement": "Clean",
 		"score": 2
@@ -41,6 +51,11 @@
     },
     {
         "position": "D",
+        "achievement": "Clean",
+        "score": 8
+    },
+    {
+        "position": "GK",
         "achievement": "Clean",
         "score": 8
     }
