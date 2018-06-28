@@ -3,47 +3,18 @@ const { times, sum, sampleSize, sumBy, mapValues, intersectionWith, flatMap, tak
 const util = require('util');
 
 const {
-    rootPath,
-    dataRootPath,
     budget: totalBudget,
     NUM_GENERATIONS,
     NUM_GENERATION_TEAMS,
     NUM_TEAMS_TOP_SELECTION,
     NUM_OF_MUTATIONS,
     MUTATION_SIZE,
-    TOP_PLAYERS_PER_POS_AND_PRICE,
 } = require('./settings');
 
-const scorers = require(`${dataRootPath}/scorers.json`);
-const defense = require(`${dataRootPath}/defense.json`);
-const positionScores = require(`${rootPath}/position-scores.json`);
-
+const { playersByPositionAndPrice } = require('./data-store');
 const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
 const { getTeamFormation, getTeamLineup, isPlayerInTeam, subtitutePlayers, getTeamWorth } = require('./team-utils');
 const { sampleUpToSum, monteCarloRandom } = require('./utils');
-
-// Start Program
-
-// normalizing the players prices
-const normalizedScorers = scorers.map(player => ({
-    ...player,
-    shouldPlay: player['Should play'] != null ? player['Should play'] : 1,
-    Price: Math.round(Number(player.Price)),
-}));
-
-// calculate xp for each player
-const playersWithXp = _(normalizedScorers)
-    .filter(player => player.Position && player.Price && player.Price !== 'NA')
-    .map(player => ({
-        ...player,
-        xp: calcPlayerXP(player),
-    }))
-    .value();
-
-const playersByPositionAndPrice = _(playersWithXp)
-    .groupBy(({ Position }) => Position)
-    .mapValues(topPlayersByPrice)
-    .value();
 
 function run() {
     const teams = times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice));
@@ -170,48 +141,6 @@ function getTeamTotalXp(team) {
         .flatten()
         .map(({ xp }) => xp)
         .sum();
-}
-
-function topPlayersByPrice(players) {
-    return _(players)
-        .groupBy(({ Price }) => Price)
-        .pickBy(players => players.length > 0)
-        .mapValues(players => takeTopPlayers(players, TOP_PLAYERS_PER_POS_AND_PRICE))
-        .value();
-}
-
-function takeTopPlayers(players, numTop) {
-    return _(players)
-        .orderBy(({ xp }) => xp, 'desc')
-        .take(numTop)
-        .value();
-}
-
-function calcPlayerXP(player) {
-    const { Price: price, Position: position, Team: team, Anytime: goalOdds, shouldPlay } = player;
-    const getPlayerScoreByAchievement = getPlayerScore(position);
-
-    const goalScore = getPlayerScoreByAchievement('Goal');
-
-    const cleanSheetOdds = defense.find(country => country.Name === team)['Clean sheet'];
-    const cleanSheetScore = getPlayerScoreByAchievement('Clean');
-
-    const assistOdds = goalOdds;
-    const assistScore = getPlayerScoreByAchievement('Assist');
-
-    const probabilityToPlay = shouldPlay;
-
-    return (
-        probabilityToPlay *
-        ((goalScore * 1.2) / goalOdds + (assistScore * 1.2) / assistOdds + cleanSheetScore / cleanSheetOdds)
-    );
-}
-
-function getPlayerScore(playerPosition) {
-    return playerAchievement =>
-        positionScores.find(
-            ({ position, achievement }) => position === playerPosition && achievement === playerAchievement
-        ).score;
 }
 
 module.exports = {
