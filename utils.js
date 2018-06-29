@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { fill, flatMap, times, cloneDeep, sample, sum, identity } = require('lodash');
+const { fill, flatMap, times, cloneDeep, sample, sum, sumBy, identity } = require('lodash');
 
 function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
     let sourceAmount = targetSum - (numBuckets * minValue);
@@ -16,6 +16,27 @@ function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
     }
 
     return arr;
+}
+
+function randomfillBuckets(targetSum, arrRanges) {
+    const buckets = arrRanges.map(({ key, min, max }) => ({ key, amount: min, max }));
+    let inventory = targetSum - sumBy(buckets, ({ amount }) => amount);
+
+    while (inventory > 0) {
+        const rndBucket = sample(buckets);
+
+        if (rndBucket.amount < rndBucket.max) {
+            rndBucket.amount++;
+            inventory--;
+        }
+    }
+
+    amountByKey = _(buckets)
+        .keyBy(bucket => bucket.key)
+        .mapValues(({ amount }) => amount)
+        .value();
+
+    return amountByKey;
 }
 
 function randomInRange(min, max) {
@@ -90,7 +111,7 @@ function monteCarloRandom(min, max, distributationFn = identity) {
 
 module.exports = {
     getRandomInterpolation,
-    randomInRange,
     sampleUpToSum,
     monteCarloRandom,
+    randomfillBuckets,
 };

@@ -1,12 +1,13 @@
 const _ = require('lodash');
+const { groupBy, mapValues } = require('lodash');
 
 const { dataRootPath } = require('./settings');
 const { topPlayersByPrice, calcPlayerXP } = require('./data-store-utils');
 
-const scorers = require(`${dataRootPath}/scorers.json`);
+const players = require(`${dataRootPath}/scorers.json`);
 
 // normalizing the players prices
-const normalizedScorers = scorers.map(player => ({
+const normalizedScorers = players.map(player => ({
     ...player,
     shouldPlay: player['Should play'] != null ? player['Should play'] : 1,
     Price: Math.round(Number(player.Price)),
@@ -21,12 +22,12 @@ const playersWithXp = _(normalizedScorers)
     }))
     .value();
 
-const playersByPositionAndPrice = _(playersWithXp)
-    .groupBy(({ Position }) => Position)
-    .mapValues(topPlayersByPrice)
-    .value();
+const playersByPos = groupBy(playersWithXp, player => player.Position);
+
+const playersByPositionAndPrice = mapValues(playersByPos, topPlayersByPrice);
 
 module.exports = {
-    playersWithXp,
+    players: playersWithXp,
+    playersByPos,
     playersByPositionAndPrice
 };

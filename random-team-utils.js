@@ -1,17 +1,16 @@
 const _ = require('lodash');
-const { mapValues, over, flatMap, identity, take, sample } = require('lodash');
+const { mapValues, over, flatMap, identity, take, sample, orderBy, takeRight, sumBy } = require('lodash');
 
-const { budget, numPlayers } = require('./settings'); 
+const { budget, numPlayers } = require('./settings');
+const { playersByPositionAndPrice, playersByPos } = require('./data-store');
 const {
     formationOptions,
     findMutationBetweenFormations,
     teamByPlayers
 } = require('./team-utils');
-const { getRandomInterpolation } = require('./utils');
+const { getRandomInterpolation, randomfillBuckets } = require('./utils');
 
-const avgPlayerBudget = budget / numPlayers;
-
-function getRandomTeam(playersByPositionAndPrice) {
+function getRandomTeam() {
     const formation = {
         "GK": 1,
         ...getRandomFormation()
@@ -48,7 +47,32 @@ function getRandomPlayersByBudget(playersByPrice, numPlayersToPick, budget) {
 function getRandomBudgetByPos(formation) {
     // currently calculating random budget per position by
     // number of players times the average player's budget
-    return mapValues(formation, numPlayers => numPlayers * Math.floor(avgPlayerBudget));
+    //return mapValues(formation, numPlayers => numPlayers * Math.floor(avgPlayerBudget));
+
+    const budgetRangePerPos = _(playersByPos)
+        .mapValues(players => orderBy(players, player => player.Price, 'asc'))
+        .entries()
+        .map(([pos, players]) => {
+            const numPlayers = formation[pos];
+            return {
+                key: pos,
+                ...getPlayersTotalCostRange(players, numPlayers),
+            };
+        })
+        .value();
+
+    budgetByPos = randomfillBuckets(budget, budgetRangePerPos);
+    return budgetByPos;
+}
+
+function getPlayersTotalCostRange(players, numPlayers) {
+    const minPlayers = take(players, numPlayers);
+    const maxPlayers = takeRight(players, numPlayers);
+
+    return {
+        min: sumBy(minPlayers, player => player.Price),
+        max: sumBy(maxPlayers, player => player.Price)
+    };
 }
 
 function getRandomFormation() {
