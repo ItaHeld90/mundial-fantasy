@@ -45,10 +45,6 @@ function getRandomPlayersByBudget(playersByPrice, numPlayersToPick, budget) {
 }
 
 function getRandomBudgetByPos(formation) {
-    // currently calculating random budget per position by
-    // number of players times the average player's budget
-    //return mapValues(formation, numPlayers => numPlayers * Math.floor(avgPlayerBudget));
-
     const budgetRangePerPos = _(playersByPos)
         .mapValues(players => orderBy(players, player => player.Price, 'asc'))
         .entries()
