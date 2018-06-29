@@ -1,5 +1,23 @@
 [
     {
+        "Name": "Eden Hazard",
+        "Should play": "1",
+        "Anytime": "2.15",
+        "2 or more": "7",
+        "Team": "Belgium",
+        "Position": "M",
+        "Price": "14"
+    },
+    {
+        "Name": "Romelu Lukaku",
+        "Should play": "1",
+        "Anytime": "1.91",
+        "2 or more": "5",
+        "Team": "Belgium",
+        "Position": "S",
+        "Price": "13"
+    },
+    {
         "Name": "Neymar",
         "Should play": "1",
         "Anytime": "1.91",
@@ -16,6 +34,15 @@
         "Team": "Spain",
         "Position": "S",
         "Price": "12"
+    },
+    {
+        "Name": "Harry Kane",
+        "Should play": "1",
+        "Anytime": "2.2",
+        "2 or more": "6.5",
+        "Team": "England",
+        "Position": "S",
+        "Price": "13"
     },
     {
         "Name": "Sergio Ramos",
@@ -63,6 +90,15 @@
         "Price": "15"
     },
     {
+        "Name": "Thibaut Courtois",
+        "Should play": "1",
+        "Anytime": "50",
+        "2 or more": "100",
+        "Team": "Belgium",
+        "Position": "GK",
+        "Price": "9.1"
+    },
+    {
         "Name": "Edinson Cavani",
         "Should play": "1",
         "Anytime": "2.4",
@@ -90,6 +126,15 @@
         "Price": "9.1"
     },
     {
+        "Name": "Thomas Meunier",
+        "Should play": "1",
+        "Anytime": "8",
+        "2 or more": "56",
+        "Team": "Belgium",
+        "Position": "D",
+        "Price": "9"
+    },
+    {
         "Name": "Danijel Subašić",
         "Should play": "1",
         "Anytime": "50",
@@ -108,6 +153,15 @@
         "Price": "10"
     },
     {
+        "Name": "Jordan Pickford",
+        "Should play": "1",
+        "Anytime": "50",
+        "2 or more": "100",
+        "Team": "England",
+        "Position": "GK",
+        "Price": "8"
+    },
+    {
         "Name": "Lionel Messi",
         "Should play": "1",
         "Anytime": "2.5",
@@ -115,6 +169,15 @@
         "Team": "Argentina",
         "Position": "S",
         "Price": "15"
+    },
+    {
+        "Name": "Dries Mertens",
+        "Should play": "1",
+        "Anytime": "2.75",
+        "2 or more": "11",
+        "Team": "Belgium",
+        "Position": "S",
+        "Price": "10"
     },
     {
         "Name": "hugo lloris",
@@ -171,6 +234,15 @@
         "Price": "14"
     },
     {
+        "Name": "Raheem Sterling",
+        "Should play": "1",
+        "Anytime": "3.4",
+        "2 or more": "17",
+        "Team": "England",
+        "Position": "M",
+        "Price": "12"
+    },
+    {
         "Name": "Mario Mandzukic",
         "Should play": "1",
         "Anytime": "2.87",
@@ -178,15 +250,6 @@
         "Team": "Croatia",
         "Position": "S",
         "Price": "10"
-    },
-    {
-        "Name": "rui patricio",
-        "Should play": "1",
-        "Anytime": "50",
-        "2 or more": "100",
-        "Team": "Portugal",
-        "Position": "GK",
-        "Price": "8.3"
     },
     {
         "Name": "Robin Olsen",
@@ -198,11 +261,38 @@
         "Price": "6"
     },
     {
+        "Name": "rui patricio",
+        "Should play": "1",
+        "Anytime": "50",
+        "2 or more": "100",
+        "Team": "Portugal",
+        "Position": "GK",
+        "Price": "8.3"
+    },
+    {
         "Name": "Gerard Pique",
         "Should play": "1",
         "Anytime": "9.5",
         "2 or more": "81",
         "Team": "Spain",
+        "Position": "D",
+        "Price": "9"
+    },
+    {
+        "Name": "Dedryck Boyata",
+        "Should play": "1",
+        "Anytime": "13",
+        "2 or more": "126",
+        "Team": "Belgium",
+        "Position": "D",
+        "Price": "6"
+    },
+    {
+        "Name": "Toby Alderweireld",
+        "Should play": "1",
+        "Anytime": "13",
+        "2 or more": "126",
+        "Team": "Belgium",
         "Position": "D",
         "Price": "9"
     },
@@ -232,6 +322,24 @@
         "Team": "Brazil",
         "Position": "D",
         "Price": "10"
+    },
+    {
+        "Name": "Kevin de Bruyne",
+        "Should play": "1",
+        "Anytime": "4",
+        "2 or more": "26",
+        "Team": "Belgium",
+        "Position": "M",
+        "Price": "13"
+    },
+    {
+        "Name": "David Ospina",
+        "Should play": "1",
+        "Anytime": "50",
+        "2 or more": "100",
+        "Team": "Colombia",
+        "Position": "GK",
+        "Price": "8"
     },
     {
         "Name": "Jordi Alba",
@@ -279,6 +387,15 @@
         "Price": "14"
     },
     {
+        "Name": "Jan Vertonghen",
+        "Should play": "1",
+        "Anytime": "17",
+        "2 or more": "151",
+        "Team": "Belgium",
+        "Position": "D",
+        "Price": "9"
+    },
+    {
         "Name": "kasper schmeichel",
         "Should play": "1",
         "Anytime": "50",
@@ -295,6 +412,15 @@
         "Team": "Sweden",
         "Position": "S",
         "Price": "8"
+    },
+    {
+        "Name": "Jesse Lingard",
+        "Should play": "1",
+        "Anytime": "4",
+        "2 or more": "23",
+        "Team": "England",
+        "Position": "M",
+        "Price": "7"
     },
     {
         "Name": "Luka Modric",
@@ -360,6 +486,15 @@
         "Price": "12"
     },
     {
+        "Name": "Yannick Ferreira Carrasco",
+        "Should play": "1",
+        "Anytime": "4.6",
+        "2 or more": "34",
+        "Team": "Belgium",
+        "Position": "M",
+        "Price": "10"
+    },
+    {
         "Name": "Igor Akinfeev",
         "Should play": "1",
         "Anytime": "50",
@@ -396,6 +531,15 @@
         "Price": "6"
     },
     {
+        "Name": "Radamel Falcao",
+        "Should play": "1",
+        "Anytime": "3.2",
+        "2 or more": "15",
+        "Team": "Colombia",
+        "Position": "S",
+        "Price": "12"
+    },
+    {
         "Name": "Guillermo Ochoa",
         "Should play": "1",
         "Anytime": "50",
@@ -414,6 +558,15 @@
         "Price": "7"
     },
     {
+        "Name": "Dele Alli",
+        "Should play": "0.5",
+        "Anytime": "4.5",
+        "2 or more": "29",
+        "Team": "England",
+        "Position": "M",
+        "Price": "10"
+    },
+    {
         "Name": "Haris Seferovic",
         "Should play": "1",
         "Anytime": "3.4",
@@ -428,6 +581,24 @@
         "Anytime": "26",
         "2 or more": "301",
         "Team": "Brazil",
+        "Position": "D",
+        "Price": "8"
+    },
+    {
+        "Name": "Harry Maguire",
+        "Should play": "1",
+        "Anytime": "15",
+        "2 or more": "151",
+        "Team": "England",
+        "Position": "D",
+        "Price": "7"
+    },
+    {
+        "Name": "John Stones",
+        "Should play": "1",
+        "Anytime": "15",
+        "2 or more": "151",
+        "Team": "England",
         "Position": "D",
         "Price": "8"
     },
@@ -459,6 +630,15 @@
         "Price": "8"
     },
     {
+        "Name": "Eiji Kawashima",
+        "Should play": "1",
+        "Anytime": "50",
+        "2 or more": "100",
+        "Team": "Japan",
+        "Position": "GK",
+        "Price": "6"
+    },
+    {
         "Name": "Artem Dzyuba",
         "Should play": "1",
         "Anytime": "3.2",
@@ -486,13 +666,13 @@
         "Price": "9"
     },
     {
-        "Name": "Ivan Rakitic",
+        "Name": "James Rodriguez",
         "Should play": "1",
-        "Anytime": "5.5",
-        "2 or more": "41",
-        "Team": "Croatia",
+        "Anytime": "4.2",
+        "2 or more": "23",
+        "Team": "Colombia",
         "Position": "M",
-        "Price": "10"
+        "Price": "12"
     },
     {
         "Name": "Marcelo Brozovic",
@@ -502,6 +682,24 @@
         "Team": "Croatia",
         "Position": "M",
         "Price": "7.9"
+    },
+    {
+        "Name": "Ivan Rakitic",
+        "Should play": "1",
+        "Anytime": "5.5",
+        "2 or more": "41",
+        "Team": "Croatia",
+        "Position": "M",
+        "Price": "10"
+    },
+    {
+        "Name": "Kieran Trippier",
+        "Should play": "1",
+        "Anytime": "23",
+        "2 or more": "301",
+        "Team": "England",
+        "Position": "D",
+        "Price": "6"
     },
     {
         "Name": "Goncalo Guedes",
@@ -594,6 +792,24 @@
         "Price": "7"
     },
     {
+        "Name": "Kyle Walker",
+        "Should play": "1",
+        "Anytime": "36",
+        "2 or more": "751",
+        "Team": "England",
+        "Position": "D",
+        "Price": "9"
+    },
+    {
+        "Name": "Axel Witsel",
+        "Should play": "1",
+        "Anytime": "7",
+        "2 or more": "51",
+        "Team": "Belgium",
+        "Position": "M",
+        "Price": "8"
+    },
+    {
         "Name": "Emil Forsberg",
         "Should play": "1",
         "Anytime": "5",
@@ -610,6 +826,15 @@
         "Team": "France",
         "Position": "M",
         "Price": "11"
+    },
+    {
+        "Name": "Yerry Mina",
+        "Should play": "1",
+        "Anytime": "10",
+        "2 or more": "126",
+        "Team": "Colombia",
+        "Position": "D",
+        "Price": "7"
     },
     {
         "Name": "Manuel Akanji",
@@ -666,6 +891,15 @@
         "Price": "8"
     },
     {
+        "Name": "Johan Mojica",
+        "Should play": "1",
+        "Anytime": "11",
+        "2 or more": "151",
+        "Team": "Colombia",
+        "Position": "D",
+        "Price": "6"
+    },
+    {
         "Name": "Guillermo Varela",
         "Should play": "1",
         "Anytime": "23",
@@ -700,6 +934,15 @@
         "Team": "Portugal",
         "Position": "M",
         "Price": "11"
+    },
+    {
+        "Name": "Davinson Sanchez",
+        "Should play": "1",
+        "Anytime": "12",
+        "2 or more": "151",
+        "Team": "Colombia",
+        "Position": "D",
+        "Price": "8"
     },
     {
         "Name": "Pepe",
@@ -792,6 +1035,42 @@
         "Price": "8"
     },
     {
+        "Name": "Keisuke Honda",
+        "Should play": "0.5",
+        "Anytime": "4.6",
+        "2 or more": "29",
+        "Team": "Japan",
+        "Position": "M",
+        "Price": "9"
+    },
+    {
+        "Name": "Juan Cuadrado",
+        "Should play": "1",
+        "Anytime": "5.8",
+        "2 or more": "46",
+        "Team": "Colombia",
+        "Position": "M",
+        "Price": "10"
+    },
+    {
+        "Name": "Juan Fernando Quintero",
+        "Should play": "1",
+        "Anytime": "5.8",
+        "2 or more": "46",
+        "Team": "Colombia",
+        "Position": "M",
+        "Price": "7"
+    },
+    {
+        "Name": "Yuya Osako",
+        "Should play": "1",
+        "Anytime": "4.33",
+        "2 or more": "26",
+        "Team": "Japan",
+        "Position": "S",
+        "Price": "8"
+    },
+    {
         "Name": "Pione Sisto",
         "Should play": "1",
         "Anytime": "5.8",
@@ -810,12 +1089,30 @@
         "Price": "8"
     },
     {
+        "Name": "Shinji Kagawa",
+        "Should play": "1",
+        "Anytime": "5",
+        "2 or more": "34",
+        "Team": "Japan",
+        "Position": "M",
+        "Price": "8"
+    },
+    {
         "Name": "Casemiro",
         "Should play": "1",
         "Anytime": "11",
         "2 or more": "91",
         "Team": "Brazil",
         "Position": "M",
+        "Price": "8"
+    },
+    {
+        "Name": "Santiago Arias",
+        "Should play": "1",
+        "Anytime": "21",
+        "2 or more": "301",
+        "Team": "Colombia",
+        "Position": "D",
         "Price": "8"
     },
     {
@@ -918,6 +1215,15 @@
         "Price": "8"
     },
     {
+        "Name": "Ashley Young",
+        "Should play": "1",
+        "Anytime": "13",
+        "2 or more": "126",
+        "Team": "England",
+        "Position": "M",
+        "Price": "8"
+    },
+    {
         "Name": "Maximiliano Meza",
         "Should play": "1",
         "Anytime": "9",
@@ -925,6 +1231,24 @@
         "Team": "Argentina",
         "Position": "M",
         "Price": "7"
+    },
+    {
+        "Name": "Gary Cahill",
+        "Should play": "1",
+        "Anytime": "15",
+        "2 or more": "151",
+        "Team": "England",
+        "Position": "M",
+        "Price": "8"
+    },
+    {
+        "Name": "Jordan Henderson",
+        "Should play": "1",
+        "Anytime": "15",
+        "2 or more": "151",
+        "Team": "England",
+        "Position": "M",
+        "Price": "9"
     },
     {
         "Name": "N'Golo Kante",
@@ -963,6 +1287,15 @@
         "Price": "6"
     },
     {
+        "Name": "Genki Haraguchi",
+        "Should play": "1",
+        "Anytime": "5.8",
+        "2 or more": "41",
+        "Team": "Japan",
+        "Position": "S",
+        "Price": "7"
+    },
+    {
         "Name": "Hector Herrera",
         "Should play": "1",
         "Anytime": "7",
@@ -988,6 +1321,15 @@
         "Team": "Mexico",
         "Position": "D",
         "Price": "6"
+    },
+    {
+        "Name": "Takashi Inui",
+        "Should play": "1",
+        "Anytime": "7",
+        "2 or more": "61",
+        "Team": "Japan",
+        "Position": "M",
+        "Price": "7"
     },
     {
         "Name": "Joao Moutinho",
@@ -1024,6 +1366,15 @@
         "Team": "Mexico",
         "Position": "M",
         "Price": "8"
+    },
+    {
+        "Name": "Maya Yoshida",
+        "Should play": "1",
+        "Anytime": "15",
+        "2 or more": "201",
+        "Team": "Japan",
+        "Position": "D",
+        "Price": "7"
     },
     {
         "Name": "Anton Miranchuk",
@@ -1071,6 +1422,15 @@
         "Price": "8"
     },
     {
+        "Name": "Yuto Nagatomo",
+        "Should play": "1",
+        "Anytime": "17",
+        "2 or more": "251",
+        "Team": "Japan",
+        "Position": "D",
+        "Price": "7"
+    },
+    {
         "Name": "Thomas Delaney",
         "Should play": "1",
         "Anytime": "12",
@@ -1080,6 +1440,24 @@
         "Price": "7"
     },
     {
+        "Name": "Gaku Shibasaki",
+        "Should play": "1",
+        "Anytime": "9.5",
+        "2 or more": "101",
+        "Team": "Japan",
+        "Position": "M",
+        "Price": "6"
+    },
+    {
+        "Name": "Wilmar Barrios",
+        "Should play": "1",
+        "Anytime": "17",
+        "2 or more": "251",
+        "Team": "Colombia",
+        "Position": "M",
+        "Price": "6"
+    },
+    {
         "Name": "Carlos Salcedo",
         "Should play": "1",
         "Anytime": "36",
@@ -1087,6 +1465,24 @@
         "Team": "Mexico",
         "Position": "D",
         "Price": "7"
+    },
+    {
+        "Name": "Gen Shoji",
+        "Should play": "1",
+        "Anytime": "34",
+        "2 or more": "751",
+        "Team": "Japan",
+        "Position": "D",
+        "Price": "5"
+    },
+    {
+        "Name": "Hiroki Sakai",
+        "Should play": "1",
+        "Anytime": "34",
+        "2 or more": "751",
+        "Team": "Japan",
+        "Position": "D",
+        "Price": "6"
     },
     {
         "Name": "Javier Mascherano",
@@ -1114,5 +1510,14 @@
         "Team": "Russia",
         "Position": "M",
         "Price": "8"
+    },
+    {
+        "Name": "Makoto Hasebe",
+        "Should play": "1",
+        "Anytime": "17",
+        "2 or more": "251",
+        "Team": "Japan",
+        "Position": "M",
+        "Price": "7"
     }
 ]
