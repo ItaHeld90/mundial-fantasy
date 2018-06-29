@@ -10,6 +10,7 @@ const players = require(`${dataRootPath}/scorers.json`);
 const normalizedScorers = players.map(player => ({
     ...player,
     shouldPlay: player['Should play'] != null ? player['Should play'] : 1,
+    twoOrMore: player['2 or more'],
     Price: Math.round(Number(player.Price)),
 }));
 
