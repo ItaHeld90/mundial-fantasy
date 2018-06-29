@@ -28,6 +28,7 @@ const { sampleUpToSum, monteCarloRandom } = require('./utils');
 const normalizedScorers = scorers.map(player => ({
     ...player,
     shouldPlay: player['Should play'] != null ? player['Should play'] : 1,
+    twoOrMore: player['2 or more'],
     Price: Math.round(Number(player.Price)),
 }));
 
@@ -188,7 +189,7 @@ function takeTopPlayers(players, numTop) {
 }
 
 function calcPlayerXP(player) {
-    const { Price: price, Position: position, Team: team, Anytime: goalOdds, shouldPlay } = player;
+    const { Position: position, Team: team, Anytime: goalOdds, twoOrMore, shouldPlay } = player;
     const getPlayerScoreByAchievement = getPlayerScore(position);
 
     const goalScore = getPlayerScoreByAchievement('Goal');
@@ -203,7 +204,12 @@ function calcPlayerXP(player) {
 
     return (
         probabilityToPlay *
-        ((goalScore * 1.2) / goalOdds + (assistScore * 1.2) / assistOdds + cleanSheetScore / cleanSheetOdds)
+        (
+            goalScore / goalOdds +
+            assistScore / assistOdds +
+            2 * (goalScore / twoOrMore) +
+            cleanSheetScore / cleanSheetOdds
+        )
     );
 }
 
