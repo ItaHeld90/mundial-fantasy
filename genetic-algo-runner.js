@@ -11,7 +11,7 @@ const {
     MUTATION_SIZE,
 } = require('./settings');
 
-const { playersByPositionAndPrice } = require('./data-store');
+const { playersByPositionAndPrice, playersByPos } = require('./data-store');
 const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
 const { getTeamFormation, getTeamLineup, isPlayerInTeam, subtitutePlayers, getTeamWorth } = require('./team-utils');
 const { sampleUpToSum, monteCarloRandom } = require('./utils');
@@ -78,20 +78,19 @@ function mutateTeam(team) {
 
     const outPlayersPriceSum = sumBy(outPlayers, ({ Price }) => Number(Price));
 
+    // calculate in players prices
+    const availablePlayersByPos = _(playersByPos)
+        .mapValues(players =>
+            players.filter(p => !isPlayerInTeam(team, p))
+        )
+        .pickBy(players => players.length > 0)
+        .value();
+
     // calculate in players budget
     const teamWorth = getTeamWorth(team) - outPlayersPriceSum;
-    const numInPlayers = sum(Object.values(inMutation));
-    const inPlayersBudget = getInPlayersBudget(numInPlayers, teamWorth, totalBudget);
+    const inPlayersBudget = getInPlayersBudget(inMutation, availablePlayersByPos, teamWorth, totalBudget);
 
-    // calculate in players prices
-    const availablePlayers = mapValues(playersByPositionAndPrice, playersByPrice =>
-        _(playersByPrice)
-            .mapValues(players => players.filter(p => !isPlayerInTeam(team, p)))
-            .pickBy(players => players.length > 0)
-            .value()
-    );
-
-    const inPlayersSampleSettings = _(availablePlayers)
+    const inPlayersSampleSettings = _(availablePlayersByPos)
         // getting all the players prices in a numeric form
         .mapValues(playersByPrice => Object.keys(playersByPrice).map(price => Number(price)))
         .entries()
@@ -112,7 +111,7 @@ function mutateTeam(team) {
 
     // for every position and price pair find an available player to enter the team
     for (let [pos, price] of inPlayersPosPricePairs) {
-        const player = availablePlayers[pos][price].shift();
+        const player = availablePlayersByPos[pos][price].shift();
 
         // if no player fits the description - try the entire mutation again
         if (!player) {
@@ -127,12 +126,27 @@ function mutateTeam(team) {
     return mutatedTeam;
 }
 
-function getInPlayersBudget(numInPlayers, teamWorth, totalBudget) {
-    const inPlayersMinBudget = numInPlayers * 6; // TODO: calculate real min budget
-    const spareBudget = totalBudget - teamWorth;
+function getInPlayersBudget(inMutation, availablePlayersByPos, teamWorth, totalBudget) {
+    // get all the players prices per position
+    const playersPricesByPos = mapValues(availablePlayersByPos, players =>
+        _(players)
+            .orderBy(player => player.Price, 'asc')
+            .map(player => player.Price)
+            .value()
+    );
+
+    // the min budget is calculated by the sum of the most cheap
+    // combination of available players and the given mutation
+    const minBudget = _(inMutation)
+        .entries()
+        .flatMap(([pos, numMutations]) => take(playersPricesByPos[pos], numMutations))
+        .sum();
+
+    // the max budget is the spare budget
+    const maxBudget = totalBudget - teamWorth;
 
     // adding 1 to the spare budget to include the upper bound for the monte carlo
-    return monteCarloRandom(inPlayersMinBudget, spareBudget, num => Math.pow(num, 2));
+    return monteCarloRandom(minBudget, maxBudget, num => Math.pow(num, 2));
 }
 
 function getTeamTotalXp(team) {
