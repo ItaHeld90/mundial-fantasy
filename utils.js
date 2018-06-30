@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { fill, flatMap, times, cloneDeep, sample, sum, identity } = require('lodash');
+const { fill, flatMap, times, cloneDeep, sample, sum, sumBy, identity, range } = require('lodash');
 
 function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
     let sourceAmount = targetSum - (numBuckets * minValue);
@@ -16,6 +16,30 @@ function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
     }
 
     return arr;
+}
+
+function randomFillBuckets(targetSum, arrRanges) {
+    const buckets = arrRanges.map(({ key, min, max }) => ({ key, amount: min, max }));
+    let inventory = targetSum - sumBy(buckets, ({ amount }) => amount);
+
+    const bucketsFull = 
+        () => buckets.every(bucket => bucket.amount === bucket.max);
+
+    while (inventory > 0 && !bucketsFull()) {
+        const rndBucket = sample(buckets);
+
+        if (rndBucket.amount < rndBucket.max) {
+            rndBucket.amount++;
+            inventory--;
+        }
+    }
+
+    amountByKey = _(buckets)
+        .keyBy(bucket => bucket.key)
+        .mapValues(({ amount }) => amount)
+        .value();
+
+    return amountByKey;
 }
 
 function randomInRange(min, max) {
@@ -68,7 +92,7 @@ function sampleUpToSum(sampleSettings, expectedSum) {
             // const bla = groupBy(pointers, ({ key }) => key);
             return _(pointers)
                 .groupBy(({ key }) => key)
-                .mapValues(sampleSettings => 
+                .mapValues(sampleSettings =>
                     sampleSettings.map(({ arr, idx }) => arr[idx])
                 )
                 .value();
@@ -88,9 +112,49 @@ function monteCarloRandom(min, max, distributationFn = identity) {
     }
 }
 
+function sampleUpToSum2(descSortedValues, numPick, targetSum) {
+    const pointers = new Set(range(0, numPick));
+
+    let currSum = _([...pointers.values()])
+        .map(pointer => descSortedValues[pointer])
+        .sum();
+
+    // while sum is bigger than the target sum
+    while (currSum > targetSum) {
+        // pick a random pointer
+        const pointerToUpdate = sample([...pointers.values()]);
+        // find an available index to decrease the pointer to
+        const updatedPointer =
+            findSmallestVacantNumber(pointers, pointerToUpdate + 1, descSortedValues.length);
+
+        if (updatedPointer !== -1) {
+            // update the pointer index
+            pointers.delete(pointerToUpdate);
+            pointers.add(updatedPointer);
+
+            // update the current sum
+            currSum +=
+                descSortedValues[updatedPointer] - descSortedValues[pointerToUpdate];
+        }
+    }
+
+    return [...pointers.values()];
+}
+
+function findSmallestVacantNumber(numbersSet, min, max) {
+    for (let i = min; i < max; i++) {
+        if (!numbersSet.has(i)) {
+            return i;
+        }
+    }
+
+    return -1;
+}
+
 module.exports = {
     getRandomInterpolation,
-    randomInRange,
     sampleUpToSum,
     monteCarloRandom,
+    randomFillBuckets,
+    sampleUpToSum2
 };
