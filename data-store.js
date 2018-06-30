@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { groupBy, mapValues } = require('lodash');
+const { groupBy } = require('lodash');
 
 const { dataRootPath } = require('./settings');
 const { calcPlayerXP } = require('./data-store-utils');

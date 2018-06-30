@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, orderBy, sampleSize, sumBy, mapValues, intersectionWith, flatMap, take } = require('lodash');
+const { times, sampleSize, sumBy, mapValues, intersectionWith, flatMap, take } = require('lodash');
 const util = require('util');
 
 const {

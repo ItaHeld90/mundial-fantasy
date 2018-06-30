@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { flatMap, take, range, sample, orderBy, takeRight, sumBy } = require('lodash');
+const { flatMap, take, sample, orderBy, takeRight, sumBy } = require('lodash');
 
 const { budget } = require('./settings');
 const { playersByPos } = require('./data-store');
