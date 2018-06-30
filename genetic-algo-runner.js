@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, sum, sampleSize, sumBy, mapValues, intersectionWith, flatMap, take } = require('lodash');
+const { times, orderBy, sampleSize, sumBy, mapValues, intersectionWith, flatMap, take } = require('lodash');
 const util = require('util');
 
 const {
@@ -12,9 +12,9 @@ const {
 } = require('./settings');
 
 const { playersByPositionAndPrice, playersByPos } = require('./data-store');
-const { getRandomTeam, getRandomFormationMutation } = require('./random-team-utils');
+const { getRandomTeam, getRandomFormationMutation, getRandomBudgetByPos, getRandomPlayersByBudget } = require('./random-team-utils');
 const { getTeamFormation, getTeamLineup, isPlayerInTeam, subtitutePlayers, getTeamWorth } = require('./team-utils');
-const { sampleUpToSum, monteCarloRandom } = require('./utils');
+const { monteCarloRandom } = require('./utils');
 
 function run() {
     const teams = times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice));
@@ -89,37 +89,20 @@ function mutateTeam(team) {
     // calculate in players budget
     const teamWorth = getTeamWorth(team) - outPlayersPriceSum;
     const inPlayersBudget = getInPlayersBudget(inMutation, availablePlayersByPos, teamWorth, totalBudget);
-
-    const inPlayersSampleSettings = _(availablePlayersByPos)
-        // getting all the players prices in a numeric form
-        .mapValues(playersByPrice => Object.keys(playersByPrice).map(price => Number(price)))
+    const inPlayersBudgetByPos = 
+        getRandomBudgetByPos(availablePlayersByPos, inMutation, inPlayersBudget);
+    
+    // get random in players according to the players budget
+    const inPlayers = _(inPlayersBudgetByPos)
         .entries()
-        .map(([pos, prices]) => ({ key: pos, arr: prices, numSamples: inMutation[pos] }))
-        .filter(({ numSamples }) => numSamples > 0)
-        .value();
-
-    const inPlayersPrices = sampleUpToSum(inPlayersSampleSettings, inPlayersBudget);
-
-    let inPlayers = [];
-
-    const inPlayersPosPricePairs = _(inPlayersPrices)
-        .entries()
-        .flatMap(([pos, prices]) =>
-            prices.map(price => [pos, price])
+        .flatMap(([pos, posBudget]) =>
+            getRandomPlayersByBudget(
+                availablePlayersByPos[pos],
+                inMutation[pos],
+                posBudget
+            )
         )
         .value();
-
-    // for every position and price pair find an available player to enter the team
-    for (let [pos, price] of inPlayersPosPricePairs) {
-        const player = availablePlayersByPos[pos][price].shift();
-
-        // if no player fits the description - try the entire mutation again
-        if (!player) {
-            return mutateTeam(team);
-        }
-
-        inPlayers.push(player);
-    }
 
     // perform subtitution and return the newly created team
     const mutatedTeam = subtitutePlayers(team, outPlayers, inPlayers);
@@ -146,7 +129,9 @@ function getInPlayersBudget(inMutation, availablePlayersByPos, teamWorth, totalB
     const maxBudget = totalBudget - teamWorth;
 
     // adding 1 to the spare budget to include the upper bound for the monte carlo
-    return monteCarloRandom(minBudget, maxBudget, num => Math.pow(num, 2));
+    return Math.floor(
+        monteCarloRandom(minBudget, maxBudget, num => Math.pow(num, 2))
+    );
 }
 
 function getTeamTotalXp(team) {

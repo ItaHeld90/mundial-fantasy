@@ -15,7 +15,7 @@ function getRandomTeam() {
         "GK": 1,
         ...getRandomFormation()
     }
-    const budgetByPos = getRandomBudgetByPos(formation);
+    const budgetByPos = getRandomBudgetByPos(playersByPos, formation, budget);
 
     const teamPlayers =
         flatMap(["GK", "S", "M", "D"], pos =>
@@ -37,10 +37,11 @@ function getRandomPlayersByBudget(players, numPlayersToPick, budget) {
     return pointers.map(pointer => descSortedPlayers[pointer]);
 }
 
-function getRandomBudgetByPos(formation) {
-    const budgetRangePerPos = _(playersByPos)
+function getRandomBudgetByPos(availablePlayersByPos, formation, totalBudget) {
+    const budgetRangePerPos = _(availablePlayersByPos)
         .mapValues(players => orderBy(players, player => player.Price, 'asc'))
         .entries()
+        .filter(([pos]) => formation[pos] > 0)
         .map(([pos, players]) => {
             const numPlayers = formation[pos];
             return {
@@ -50,7 +51,7 @@ function getRandomBudgetByPos(formation) {
         })
         .value();
 
-    budgetByPos = randomfillBuckets(budget, budgetRangePerPos);
+    budgetByPos = randomfillBuckets(totalBudget, budgetRangePerPos);
     return budgetByPos;
 }
 
@@ -78,4 +79,5 @@ module.exports = {
     getRandomFormation,
     getRandomFormationMutation,
     getRandomPlayersByBudget,
+    getRandomBudgetByPos,
 };
