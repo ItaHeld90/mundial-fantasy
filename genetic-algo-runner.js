@@ -11,13 +11,13 @@ const {
     MUTATION_SIZE,
 } = require('./settings');
 
-const { playersByPositionAndPrice, playersByPos } = require('./data-store');
+const { playersByPos } = require('./data-store');
 const { getRandomTeam, getRandomFormationMutation, getRandomBudgetByPos, getRandomPlayersByBudget } = require('./random-team-utils');
 const { getTeamFormation, getTeamLineup, isPlayerInTeam, subtitutePlayers, getTeamWorth } = require('./team-utils');
 const { monteCarloRandom } = require('./utils');
 
 function run() {
-    const teams = times(NUM_GENERATION_TEAMS, () => getRandomTeam(playersByPositionAndPrice));
+    const teams = times(NUM_GENERATION_TEAMS, getRandomTeam)
 
     const topTeams = runGeneticAlgo(teams, 1);
 

@@ -2,7 +2,7 @@ const _ = require('lodash');
 const { groupBy, mapValues } = require('lodash');
 
 const { dataRootPath } = require('./settings');
-const { topPlayersByPrice, calcPlayerXP } = require('./data-store-utils');
+const { calcPlayerXP } = require('./data-store-utils');
 
 const players = require(`${dataRootPath}/scorers.json`);
 
@@ -25,10 +25,7 @@ const playersWithXp = _(normalizedScorers)
 
 const playersByPos = groupBy(playersWithXp, player => player.Position);
 
-const playersByPositionAndPrice = mapValues(playersByPos, topPlayersByPrice);
-
 module.exports = {
     players: playersWithXp,
     playersByPos,
-    playersByPositionAndPrice
 };
