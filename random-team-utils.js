@@ -37,16 +37,6 @@ function getRandomPlayersByBudget(players, numPlayersToPick, budget) {
     return pointers.map(pointer => descSortedPlayers[pointer]);
 }
 
-function findSmallestVacantNumber(numbersSet, min, max) {
-    for (let i = min; i < max; i++) {
-        if (!numbersSet.has(i)) {
-            return i;
-        }
-    }
-
-    return -1;
-}
-
 function getRandomBudgetByPos(formation) {
     const budgetRangePerPos = _(playersByPos)
         .mapValues(players => orderBy(players, player => player.Price, 'asc'))
@@ -86,5 +76,6 @@ function getRandomFormationMutation(formation, mutationSize) {
 module.exports = {
     getRandomTeam,
     getRandomFormation,
-    getRandomFormationMutation
+    getRandomFormationMutation,
+    getRandomPlayersByBudget,
 };
