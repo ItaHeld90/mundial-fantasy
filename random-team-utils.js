@@ -8,7 +8,7 @@ const {
     findMutationBetweenFormations,
     teamByPlayers
 } = require('./team-utils');
-const { randomfillBuckets, sampleUpToSum2 } = require('./utils');
+const { randomFillBuckets, sampleUpToSum2 } = require('./utils');
 
 function getRandomTeam() {
     const formation = {
@@ -51,7 +51,7 @@ function getRandomBudgetByPos(availablePlayersByPos, formation, totalBudget) {
         })
         .value();
 
-    budgetByPos = randomfillBuckets(totalBudget, budgetRangePerPos);
+    const budgetByPos = randomFillBuckets(totalBudget, budgetRangePerPos);
     return budgetByPos;
 }
 

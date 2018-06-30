@@ -18,11 +18,14 @@ function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
     return arr;
 }
 
-function randomfillBuckets(targetSum, arrRanges) {
+function randomFillBuckets(targetSum, arrRanges) {
     const buckets = arrRanges.map(({ key, min, max }) => ({ key, amount: min, max }));
     let inventory = targetSum - sumBy(buckets, ({ amount }) => amount);
 
-    while (inventory > 0) {
+    const bucketsFull = 
+        () => buckets.every(bucket => bucket.amount === bucket.max);
+
+    while (inventory > 0 && !bucketsFull()) {
         const rndBucket = sample(buckets);
 
         if (rndBucket.amount < rndBucket.max) {
@@ -152,6 +155,6 @@ module.exports = {
     getRandomInterpolation,
     sampleUpToSum,
     monteCarloRandom,
-    randomfillBuckets,
+    randomFillBuckets,
     sampleUpToSum2
 };
