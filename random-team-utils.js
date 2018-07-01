@@ -8,7 +8,7 @@ const {
     findMutationBetweenFormations,
     teamByPlayers
 } = require('./team-utils');
-const { randomFillBuckets, sampleUpToSum2 } = require('./utils');
+const { randomFillBuckets, sampleUpToSum } = require('./utils');
 
 function getRandomTeam() {
     const limitedPlayersByPos = _(players)
@@ -40,7 +40,7 @@ function getRandomTeam() {
 function getRandomPlayersByBudget(players, numPlayersToPick, budget) {
     const descSortedPlayers = orderBy(players, player => player.Price, 'desc');
     const descSortedPrices = descSortedPlayers.map(player => player.Price);
-    const pointers = sampleUpToSum2(descSortedPrices, numPlayersToPick, budget);
+    const pointers = sampleUpToSum(descSortedPrices, numPlayersToPick, budget);
 
     return pointers.map(pointer => descSortedPlayers[pointer]);
 }
