@@ -15,6 +15,8 @@ const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
 
 const GK_PROBABILITY_FOR_SUBTITUTION = 0.2;
 
+const NUM_LIMIT_BY_TEAM = 3;
+
 module.exports = {
     rootPath,
     dataRootPath,
@@ -27,4 +29,5 @@ module.exports = {
     MUTATION_SIZE,
     TOP_PLAYERS_PER_POS_AND_PRICE,
     GK_PROBABILITY_FOR_SUBTITUTION,
+    NUM_LIMIT_BY_TEAM,
 }

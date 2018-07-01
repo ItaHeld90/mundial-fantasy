@@ -1,8 +1,8 @@
 const _ = require('lodash');
-const { flatMap, take, sample, orderBy, takeRight, sumBy } = require('lodash');
+const { flatMap, take, sample, orderBy, takeRight, sumBy, sampleSize } = require('lodash');
 
-const { budget } = require('./settings');
-const { playersByPos } = require('./data-store');
+const { budget, NUM_LIMIT_BY_TEAM } = require('./settings');
+const { players } = require('./data-store');
 const {
     formationOptions,
     findMutationBetweenFormations,
@@ -11,15 +11,23 @@ const {
 const { randomFillBuckets, sampleUpToSum2 } = require('./utils');
 
 function getRandomTeam() {
+    const limitedPlayersByPos = _(players)
+        .groupBy(player => player.Team)
+        .mapValues(players => sampleSize(players, NUM_LIMIT_BY_TEAM))
+        .values()
+        .flatten()
+        .groupBy(player => player.Position)
+        .value();
+
     const formation = {
         "GK": 1,
         ...getRandomFormation()
     }
-    const budgetByPos = getRandomBudgetByPos(playersByPos, formation, budget);
+    const budgetByPos = getRandomBudgetByPos(limitedPlayersByPos, formation, budget);
 
     const teamPlayers =
         flatMap(["GK", "S", "M", "D"], pos =>
-            getRandomPlayersByBudget(playersByPos[pos],
+            getRandomPlayersByBudget(limitedPlayersByPos[pos],
                 formation[pos],
                 budgetByPos[pos]
             )
