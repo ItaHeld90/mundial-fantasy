@@ -1,22 +1,5 @@
 const _ = require('lodash');
-const { fill, flatMap, times, cloneDeep, sample, sum, sumBy, identity, range } = require('lodash');
-
-function getRandomInterpolation(targetSum, numBuckets, minValue, maxValue) {
-    let sourceAmount = targetSum - (numBuckets * minValue);
-    const arr = fill(Array(numBuckets), minValue);
-
-    while (sourceAmount > 0) {
-        const idx = randomInRange(0, arr.length - 1);
-        const numInstances = arr[idx];
-
-        if (numInstances < maxValue) {
-            arr[idx]++;
-            sourceAmount--;
-        }
-    }
-
-    return arr;
-}
+const { sample, sumBy, identity, range } = require('lodash');
 
 function randomFillBuckets(targetSum, arrRanges) {
     const buckets = arrRanges.map(({ key, min, max }) => ({ key, amount: min, max }));
@@ -98,7 +81,6 @@ function findSmallestVacantNumber(numbersSet, min, max) {
 }
 
 module.exports = {
-    getRandomInterpolation,
     monteCarloRandom,
     randomFillBuckets,
     sampleUpToSum
