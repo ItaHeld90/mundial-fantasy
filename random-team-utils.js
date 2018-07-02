@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { flatMap, take, sample, orderBy, takeRight, sumBy, sampleSize } = require('lodash');
+const { flatMap, take, sample, orderBy, takeRight, sumBy, zipObject, sampleSize, size, times } = require('lodash');
 
 const { budget, NUM_LIMIT_BY_TEAM } = require('./settings');
 const { players } = require('./data-store');
@@ -11,18 +11,21 @@ const {
 const { randomFillBuckets, sampleUpToSum } = require('./utils');
 
 function getRandomTeam() {
-    const limitedPlayersByPos = _(players)
-        .groupBy(player => player.Team)
-        .mapValues(players => sampleSize(players, NUM_LIMIT_BY_TEAM))
-        .values()
-        .flatten()
-        .groupBy(player => player.Position)
-        .value();
+    // const limitedPlayersByPos = _(players)
+    //     .groupBy(player => player.Team)
+    //     .mapValues(players => sampleSize(players, NUM_LIMIT_BY_TEAM))
+    //     .values()
+    //     .flatten()
+    //     .groupBy(player => player.Position)
+    //     .value();
 
     const formation = {
         "GK": 1,
         ...getRandomFormation()
     }
+
+    const limited = limitPlayersByCountry(formation, NUM_LIMIT_BY_TEAM);
+
     const budgetByPos = getRandomBudgetByPos(limitedPlayersByPos, formation, budget);
 
     const teamPlayers =
@@ -34,6 +37,46 @@ function getRandomTeam() {
         );
 
     return teamByPlayers(teamPlayers);
+}
+
+function limitPlayersByCountry(formation, limit) {
+    const countries =
+        _(players)
+            .map(player => player.Team)
+            .uniq()
+            .value();
+
+    // create a list of limits per country
+    const limitByCountry =
+        zipObject(
+            countries,
+            times(countries.length, _ => limit)
+        );
+
+    // create a pool of countries
+    const countriesPool =
+        _(limitByCountry)
+            .entries()
+            .flatMap(([country, limit]) => times(limit, _ => country))
+            .shuffle()
+            .value();
+
+    // get number of players by country and position
+    numPlayersByCountryAndPosition = _(players)
+        .groupBy(player => player.Team)
+        .mapValues(players =>
+            _(players)
+                .groupBy(player => player.Position)
+                .mapValues(size)
+                .value()
+        )
+        .value();
+
+    // fill the minimum players according to the foramtion (should always be possible)
+    // for each item in the pool
+    // take the item out of the pool
+    // pick an available position for this country
+    // add country to the position bucket
 }
 
 // TODO: limit players by countries
