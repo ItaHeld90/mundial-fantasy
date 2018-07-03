@@ -34,7 +34,7 @@ function getRandomTeam() {
 
 function limitPlayersByCountry(formation, limit, availablePlayers) {
     const countries =
-        _(players)
+        _(availablePlayers)
             .map(player => player.Team)
             .uniq()
             .value();
