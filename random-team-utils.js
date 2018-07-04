@@ -133,7 +133,6 @@ function groupPlayersByCountry(players) {
     return groupBy(players, player => player.Team);
 }
 
-// TODO: limit players by countries
 function getRandomPlayersByBudget(players, numPlayersToPick, budget) {
     const descSortedPlayers = orderBy(players, player => player.Price, 'desc');
     const descSortedPrices = descSortedPlayers.map(player => player.Price);

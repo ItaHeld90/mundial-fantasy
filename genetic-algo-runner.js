@@ -76,7 +76,7 @@ function mutateTeam(team) {
         .flatMap(([pos, numPlayers]) => sampleSize(teamLineUp[pos], numPlayers))
         .value();
 
-    const outPlayersPriceSum = sumBy(outPlayers, ({ Price }) => Number(Price));
+    const outPlayersPriceSum = sumBy(outPlayers, ({ Price }) => Price);
 
     // calculate in players prices
     const availablePlayersByPos = _(playersByPos)
