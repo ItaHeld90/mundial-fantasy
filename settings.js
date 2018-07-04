@@ -2,10 +2,10 @@ const period = 5;
 const rootPath = './data/';
 const dataRootPath = `${rootPath}/period ${period}/`;
 
-const budget = 120;
+const budget = 109;
 const numPlayers = 11;
 
-const NUM_GENERATIONS = 300;
+const NUM_GENERATIONS = 3000;
 const NUM_GENERATION_TEAMS = 20;
 const NUM_TEAMS_TOP_SELECTION = 5;
 const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;
@@ -15,7 +15,7 @@ const TOP_PLAYERS_PER_POS_AND_PRICE = 7;
 
 const GK_PROBABILITY_FOR_SUBTITUTION = 0.2;
 
-const NUM_LIMIT_BY_TEAM = 3;
+const NUM_LIMIT_BY_TEAM = 4;
 
 module.exports = {
     rootPath,
