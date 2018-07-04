@@ -5,7 +5,7 @@ const dataRootPath = `${rootPath}/period ${period}/`;
 const budget = 102;
 const numPlayers = 11;
 
-const NUM_GENERATIONS = 2000;
+const NUM_GENERATIONS = 300;
 const NUM_GENERATION_TEAMS = 20;
 const NUM_TEAMS_TOP_SELECTION = 5;
 const NUM_OF_MUTATIONS = Math.floor(NUM_GENERATION_TEAMS / NUM_TEAMS_TOP_SELECTION) - 1;

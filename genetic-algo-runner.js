@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { times, sampleSize, sumBy, mapValues, intersectionWith, flatMap, take } = require('lodash');
+const { times, sampleSize, sumBy, mapValues, intersectionWith, flatMap, take, size, groupBy } = require('lodash');
 const util = require('util');
 
 const {
@@ -9,11 +9,12 @@ const {
     NUM_TEAMS_TOP_SELECTION,
     NUM_OF_MUTATIONS,
     MUTATION_SIZE,
+    NUM_LIMIT_BY_TEAM,
 } = require('./settings');
 
-const { playersByPos } = require('./data-store');
-const { getRandomTeam, getRandomFormationMutation, getRandomBudgetByPos, getRandomPlayersByBudget } = require('./random-team-utils');
-const { getTeamFormation, getTeamLineup, isPlayerInTeam, subtitutePlayers, getTeamWorth } = require('./team-utils');
+const { players } = require('./data-store');
+const { getRandomTeam, getRandomFormationMutation, getRandomBudgetByPos, getRandomPlayersByBudget, limitAvailablePlayersByCountry } = require('./random-team-utils');
+const { getTeamFormation, getTeamLineup, isPlayerInTeam, subtitutePlayers, getTeamWorth, getTeamPlayers } = require('./team-utils');
 const { monteCarloRandom } = require('./utils');
 
 function run() {
@@ -79,19 +80,24 @@ function mutateTeam(team) {
     const outPlayersPriceSum = sumBy(outPlayers, ({ Price }) => Price);
 
     // calculate in players prices
-    const availablePlayersByPos = _(playersByPos)
-        .mapValues(players =>
-            players.filter(p => !isPlayerInTeam(team, p))
+    const availablePlayers = 
+        players.filter(p => !isPlayerInTeam(team, p));
+
+    const availablePlayersLimitedByCountry =
+        limitAvailableMutationsByCountry(availablePlayers, inMutation, team, NUM_LIMIT_BY_TEAM);
+
+    const availablePlayersByPos = 
+        groupBy(
+            availablePlayersLimitedByCountry,
+            player => player.Position
         )
-        .pickBy(players => players.length > 0)
-        .value();
 
     // calculate in players budget
     const teamWorth = getTeamWorth(team) - outPlayersPriceSum;
     const inPlayersBudget = getInPlayersBudget(inMutation, availablePlayersByPos, teamWorth, totalBudget);
-    const inPlayersBudgetByPos = 
+    const inPlayersBudgetByPos =
         getRandomBudgetByPos(availablePlayersByPos, inMutation, inPlayersBudget);
-    
+
     // get random in players according to the players budget
     const inPlayers = _(inPlayersBudgetByPos)
         .entries()
@@ -107,6 +113,43 @@ function mutateTeam(team) {
     // perform subtitution and return the newly created team
     const mutatedTeam = subtitutePlayers(team, outPlayers, inPlayers);
     return mutatedTeam;
+}
+
+function limitAvailableMutationsByCountry(
+    availablePlayers,
+    inMutation,
+    team,
+    limit
+) {
+    const teamPlayers = getTeamPlayers(team);
+
+    const numTeamPlayersByCountry = _(teamPlayers)
+        .groupBy(player => player.Team)
+        .mapValues(size)
+        .value();
+
+    const countries =
+        _(availablePlayers)
+            .map(player => player.Team)
+            .uniq()
+            .value();
+
+    const limitByCountry = _(countries)
+        .zipObject(
+            times(countries.length, _ => limit)
+        )
+        .mapValues((numPlayersLimit, country) =>
+            numTeamPlayersByCountry[country]
+                ? numPlayersLimit - numTeamPlayersByCountry[country]
+                : numPlayersLimit
+        )
+        .value();
+
+    return limitAvailablePlayersByCountry(
+        limitByCountry,
+        availablePlayers,
+        inMutation
+    );
 }
 
 function getInPlayersBudget(inMutation, availablePlayersByPos, teamWorth, totalBudget) {

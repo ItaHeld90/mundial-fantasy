@@ -16,7 +16,7 @@ function getRandomTeam() {
         ...getRandomFormation()
     }
 
-    const playersLimitedByCountry = limitPlayersByCountry(formation, NUM_LIMIT_BY_TEAM, players);
+    const playersLimitedByCountry = getAvailablePlayersLimitedByCountry(formation, NUM_LIMIT_BY_TEAM, players);
     const availablePlayersByPos = groupPlayersByPos(playersLimitedByCountry);
 
     const budgetByPos = getRandomBudgetByPos(availablePlayersByPos, formation, budget);
@@ -32,7 +32,7 @@ function getRandomTeam() {
     return teamByPlayers(teamPlayers);
 }
 
-function limitPlayersByCountry(formation, limit, availablePlayers) {
+function getAvailablePlayersLimitedByCountry(formation, limit, availablePlayers) {
     const countries =
         _(availablePlayers)
             .map(player => player.Team)
@@ -46,6 +46,14 @@ function limitPlayersByCountry(formation, limit, availablePlayers) {
             times(countries.length, _ => limit)
         );
 
+    return limitAvailablePlayersByCountry(
+        limitByCountry,
+        availablePlayers,
+        formation
+    );
+}
+
+function limitAvailablePlayersByCountry(limitByCountry, availablePlayers, formation) {
     // create a pool of countries
     const countriesPool =
         _(limitByCountry)
@@ -184,4 +192,5 @@ module.exports = {
     getRandomFormationMutation,
     getRandomPlayersByBudget,
     getRandomBudgetByPos,
+    limitAvailablePlayersByCountry,
 };
