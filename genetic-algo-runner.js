@@ -110,6 +110,14 @@ function mutateTeam(team) {
         )
         .value();
 
+    const inPlayersPriceSum = sumBy(inPlayers, ({ Price }) => Price);
+
+    // TODO: replace this condition with an appropriate fix
+    // for in players budget overflow
+    if (inPlayersPriceSum > inPlayersBudget) {
+        return team;
+    }
+
     // perform subtitution and return the newly created team
     const mutatedTeam = subtitutePlayers(team, outPlayers, inPlayers);
     return mutatedTeam;

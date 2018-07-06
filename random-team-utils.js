@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const { flatMap, take, sample, orderBy, takeRight, sumBy, zipObject, sampleSize, size, times, cloneDeep, countBy, mapValues, identity, groupBy } = require('lodash');
+const { flatMap, take, sample, orderBy, takeRight, sumBy, zipObject, sampleSize, intersection, times, cloneDeep, countBy, mapValues, identity, groupBy } = require('lodash');
 
 const { budget, NUM_LIMIT_BY_TEAM } = require('./settings');
 const { players } = require('./data-store');
@@ -75,27 +75,40 @@ function limitAvailablePlayersByCountry(limitByCountry, availablePlayers, format
     const numAvailablePlayersByCountryAndPos =
         cloneDeep(numPlayersByCountryAndPos);
 
-    // fill the minimum players according to the foramtion (should always be possible)
-    let numPlayersToPickByPosAndCountry =
-        mapValues(formation, (numPlayers, pos) => {
-            const countries = times(numPlayers, _ => {
-                const country = countriesPool.shift();
-                numAvailablePlayersByCountryAndPos[country][pos]--;
-                return country;
-            });
-
-            return countBy(countries, identity);
-        });
+    // Init the players pick settings
+    let numPlayersToPickByPosAndCountry = ["GK", "S", "M", "D"]
+        .reduce((result, pos) => 
+            ({ ...result, [pos]: {} })
+            , {}
+        );
 
     // for each item in the pool
     for (country of countriesPool) {
-        // pick an available position for this country
-        const pos =
+        const countryAvailablePositions =
             _(numAvailablePlayersByCountryAndPos[country])
                 .pickBy(numPlayers => numPlayers > 0)
                 .keys()
-                .sample();
+                .value();
 
+        const mustFillPositions = _(formation)
+            .keys()
+            .filter(pos => {
+                const filledSpots =
+                    _(numPlayersToPickByPosAndCountry[pos])
+                        .values()
+                        .flatten()
+                        .sum();
+
+                return filledSpots < formation[pos];
+            })
+            .value();
+
+        const availableMustFillPositions = intersection(countryAvailablePositions, mustFillPositions);
+
+        const pos = availableMustFillPositions.length > 0
+            ? sample(availableMustFillPositions)
+            : sample(countryAvailablePositions);
+            
         numAvailablePlayersByCountryAndPos[country][pos]--;
 
         // add country to the position bucket
