@@ -12,7 +12,7 @@ const {
     differenceWith,
     groupBy,
 } = require('lodash');
-const { getRandomInterpolation } = require('./utils');
+const { randomFillBuckets } = require('./utils');
 
 const formationOptions = [
     { "D": 5, "M": 4, "S": 1 },
@@ -84,25 +84,25 @@ function findMutationBetweenFormations(oldFormation, newFormation, mutationSize)
             .sum()
         : 0;
 
-    mutationGapTofill = mutationSize - visibleMutationSize;
+    const mutationGapTofill = mutationSize - visibleMutationSize;
+    const mutationGapRanges = ["S", "M", "D"]
+        .map(pos => ({
+            key: pos,
+            min: 0,
+            max: oldFormation[pos] - diffPosOutMutation[pos]
+        }));
 
     // calculate the mutation caused by mutating for the same position
-    let samePosMutation = {
+    const inPlaceMutation = {
         // the goal keeper will get subtituted according to the configured probability 
-        "GK": Math.random() < GK_PROBABILITY_FOR_SUBTITUTION ? 1 : 0
+        "GK": Math.random() < GK_PROBABILITY_FOR_SUBTITUTION ? 1 : 0,
+        ...randomFillBuckets(mutationGapTofill, mutationGapRanges)
     };
-
-    // Caluculate same position mutation
-    [
-        samePosMutation["S"],
-        samePosMutation["M"],
-        samePosMutation["D"],
-    ] = getRandomInterpolation(mutationGapTofill, 3, 0, Infinity);
 
     // calculate the final mutation
     const [inMutation, outMutation] =
         _([diffPosInMutation, diffPosOutMutation])
-            .zip([samePosMutation, samePosMutation])
+            .zip([inPlaceMutation, inPlaceMutation])
             .map(([diffMutation, samePosMutation]) =>
                 assignWith({}, diffMutation, samePosMutation, add)
             )
