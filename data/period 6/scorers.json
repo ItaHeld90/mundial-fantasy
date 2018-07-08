@@ -1,0 +1,392 @@
+[
+  {
+    "Name": "Harry Kane",
+    "Id": "5af0235a49ba5a50d8e6488c",
+    "Should play": 1,
+    "Anytime": 2.25,
+    "2 or more": 7,
+    "Team": "England",
+    "Position": "S",
+    "Price": 13.5
+  },
+  {
+    "Name": "Jordan Pickford",
+    "Id": "5af0235a49ba5a50d8e6489c",
+    "Should play": 1,
+    "Anytime": 50,
+    "2 or more": 100,
+    "Team": "England",
+    "Position": "GK",
+    "Price": 8
+  },
+  {
+    "Name": "Romelu Lukaku",
+    "Id": "5af0235a49ba5a50d8e6482a",
+    "Should play": 1,
+    "Anytime": 2.6,
+    "2 or more": 9.5,
+    "Team": "Belgium",
+    "Position": "S",
+    "Price": 13.3
+  },
+  {
+    "Name": "hugo lloris",
+    "Id": "5af0235a49ba5a50d8e6464e",
+    "Should play": 1,
+    "Anytime": 50,
+    "2 or more": 100,
+    "Team": "France",
+    "Position": "GK",
+    "Price": 9.1
+  },
+  {
+    "Name": "Antoine Griezmann",
+    "Id": "5af0235a49ba5a50d8e64653",
+    "Should play": 1,
+    "Anytime": 2.8,
+    "2 or more": 11,
+    "Team": "France",
+    "Position": "S",
+    "Price": 14.2
+  },
+  {
+    "Name": "Kylian Mbappe",
+    "Id": "5af0235a49ba5a50d8e64661",
+    "Should play": 1,
+    "Anytime": 2.8,
+    "2 or more": 11,
+    "Team": "France",
+    "Position": "S",
+    "Price": 12.3
+  },
+  {
+    "Name": "Danijel Subašić",
+    "Id": "5af0235a49ba5a50d8e64719",
+    "Should play": 1,
+    "Anytime": 50,
+    "2 or more": 100,
+    "Team": "Croatia",
+    "Position": "GK",
+    "Price": 8.3
+  },
+  {
+    "Name": "Thibaut Courtois",
+    "Id": "5af0235a49ba5a50d8e6482f",
+    "Should play": 1,
+    "Anytime": 50,
+    "2 or more": 100,
+    "Team": "Belgium",
+    "Position": "GK",
+    "Price": 9.2
+  },
+  {
+    "Name": "Eden Hazard",
+    "Id": "5af0235a49ba5a50d8e64832",
+    "Should play": 1,
+    "Anytime": 3.3,
+    "2 or more": 15,
+    "Team": "Belgium",
+    "Position": "M",
+    "Price": 14.4
+  },
+  {
+    "Name": "Raheem Sterling",
+    "Id": "5af0235a49ba5a50d8e6488b",
+    "Should play": 1,
+    "Anytime": 3.8,
+    "2 or more": 21,
+    "Team": "England",
+    "Position": "M",
+    "Price": 12.1
+  },
+  {
+    "Name": "Olivier Giroud",
+    "Id": "5af0235a49ba5a50d8e64650",
+    "Should play": 1,
+    "Anytime": 3.2,
+    "2 or more": 15,
+    "Team": "France",
+    "Position": "S",
+    "Price": 12
+  },
+  {
+    "Name": "Mario Mandzukic",
+    "Id": "5af0235a49ba5a50d8e64714",
+    "Should play": 1,
+    "Anytime": 3.3,
+    "2 or more": 15,
+    "Team": "Croatia",
+    "Position": "S",
+    "Price": 10.1
+  },
+  {
+    "Name": "Jesse Lingard",
+    "Id": "5af0235a49ba5a50d8e6489a",
+    "Should play": 1,
+    "Anytime": 4.4,
+    "2 or more": 29,
+    "Team": "England",
+    "Position": "M",
+    "Price": 7.3
+  },
+  {
+    "Name": "Dele Alli",
+    "Id": "5af0235a49ba5a50d8e64883",
+    "Should play": 1,
+    "Anytime": 4.6,
+    "2 or more": 29,
+    "Team": "England",
+    "Position": "M",
+    "Price": 10
+  },
+  {
+    "Name": "Ivan Perisic",
+    "Id": "5af0235a49ba5a50d8e64704",
+    "Should play": 1,
+    "Anytime": 4.2,
+    "2 or more": 23,
+    "Team": "Croatia",
+    "Position": "M",
+    "Price": 11.1
+  },
+  {
+    "Name": "John Stones",
+    "Id": "5af0235a49ba5a50d8e64892",
+    "Should play": 1,
+    "Anytime": 15,
+    "2 or more": 151,
+    "Team": "England",
+    "Position": "D",
+    "Price": 8
+  },
+  {
+    "Name": "Harry Maguire",
+    "Id": "5af0235a49ba5a50d8e64885",
+    "Should play": 1,
+    "Anytime": 15,
+    "2 or more": 151,
+    "Team": "England",
+    "Position": "D",
+    "Price": 7.15
+  },
+  {
+    "Name": "Andrej Kramaric",
+    "Id": "5af0235a49ba5a50d8e64710",
+    "Should play": 1,
+    "Anytime": 3.7,
+    "2 or more": 19,
+    "Team": "Croatia",
+    "Position": "S",
+    "Price": 8
+  },
+  {
+    "Name": "Raphael Varane",
+    "Id": "5af0235a49ba5a50d8e64649",
+    "Should play": 1,
+    "Anytime": 13,
+    "2 or more": 151,
+    "Team": "France",
+    "Position": "D",
+    "Price": 9.1
+  },
+  {
+    "Name": "Kevin de Bruyne",
+    "Id": "5af0235a49ba5a50d8e6483a",
+    "Should play": 1,
+    "Anytime": 4.75,
+    "2 or more": 29,
+    "Team": "Belgium",
+    "Position": "M",
+    "Price": 13.1
+  },
+  {
+    "Name": "Luka Modric",
+    "Id": "5af0235a49ba5a50d8e64700",
+    "Should play": 1,
+    "Anytime": 5,
+    "2 or more": 34,
+    "Team": "Croatia",
+    "Position": "M",
+    "Price": 10.1
+  },
+  {
+    "Name": "Kieran Trippier",
+    "Id": "5af0235a49ba5a50d8e64890",
+    "Should play": 1,
+    "Anytime": 23,
+    "2 or more": 301,
+    "Team": "England",
+    "Position": "D",
+    "Price": 6.3
+  },
+  {
+    "Name": "Paul Pogba",
+    "Id": "5af0235a49ba5a50d8e6464a",
+    "Should play": 1,
+    "Anytime": 5.5,
+    "2 or more": 41,
+    "Team": "France",
+    "Position": "M",
+    "Price": 11
+  },
+  {
+    "Name": "Benjamin Pavard",
+    "Id": "5b066f0f49ba5a38087f48b1",
+    "Should play": 1,
+    "Anytime": 17,
+    "2 or more": 201,
+    "Team": "France",
+    "Position": "D",
+    "Price": 6.3
+  },
+  {
+    "Name": "Samuel Umtiti",
+    "Id": "5af0235a49ba5a50d8e6464d",
+    "Should play": 1,
+    "Anytime": 17,
+    "2 or more": 201,
+    "Team": "France",
+    "Position": "D",
+    "Price": 8.9
+  },
+  {
+    "Name": "Ante Rebic",
+    "Id": "5af0235a49ba5a50d8e64712",
+    "Should play": 1,
+    "Anytime": 4.33,
+    "2 or more": 26,
+    "Team": "Croatia",
+    "Position": "S",
+    "Price": 6
+  },
+  {
+    "Name": "Ivan Rakitic",
+    "Id": "5af0235a49ba5a50d8e646fe",
+    "Should play": 1,
+    "Anytime": 5.8,
+    "2 or more": 46,
+    "Team": "Croatia",
+    "Position": "M",
+    "Price": 11.1
+  },
+  {
+    "Name": "Dejan Lovren",
+    "Id": "5af0235a49ba5a50d8e64709",
+    "Should play": 1,
+    "Anytime": 17,
+    "2 or more": 201,
+    "Team": "Croatia",
+    "Position": "D",
+    "Price": 7.2
+  },
+  {
+    "Name": "Domagoj Vida",
+    "Id": "5af0235a49ba5a50d8e6470c",
+    "Should play": 1,
+    "Anytime": 17,
+    "2 or more": 201,
+    "Team": "Croatia",
+    "Position": "D",
+    "Price": 8.3
+  },
+  {
+    "Name": "Lucas Hernandez",
+    "Id": "5b066f0f49ba5a38087f48b0",
+    "Should play": 1,
+    "Anytime": 26,
+    "2 or more": 401,
+    "Team": "France",
+    "Position": "D",
+    "Price": 7.3
+  },
+  {
+    "Name": "Ivan Strinic",
+    "Id": "5af0235a49ba5a50d8e64707",
+    "Should play": 1,
+    "Anytime": 21,
+    "2 or more": 301,
+    "Team": "Croatia",
+    "Position": "D",
+    "Price": 7.3
+  },
+  {
+    "Name": "Toby Alderweireld",
+    "Id": "5af0235a49ba5a50d8e6483b",
+    "Should play": 1,
+    "Anytime": 21,
+    "2 or more": 251,
+    "Team": "Belgium",
+    "Position": "D",
+    "Price": 9.2
+  },
+  {
+    "Name": "Jan Vertonghen",
+    "Id": "5af0235a49ba5a50d8e64841",
+    "Should play": 1,
+    "Anytime": 21,
+    "2 or more": 251,
+    "Team": "Belgium",
+    "Position": "D",
+    "Price": 9.2
+  },
+  {
+    "Name": "Sime Vrsaljko",
+    "Id": "5af0235a49ba5a50d8e64708",
+    "Should play": 1,
+    "Anytime": 34,
+    "2 or more": 751,
+    "Team": "Croatia",
+    "Position": "D",
+    "Price": 8.15
+  },
+  {
+    "Name": "Yannick Ferreira Carrasco",
+    "Id": "5af0235a49ba5a50d8e64838",
+    "Should play": 1,
+    "Anytime": 8,
+    "2 or more": 81,
+    "Team": "Belgium",
+    "Position": "M",
+    "Price": 10
+  },
+  {
+    "Name": "Ashley Young",
+    "Id": "5b066f0f49ba5a38087f4903",
+    "Should play": 1,
+    "Anytime": 13,
+    "2 or more": 126,
+    "Team": "England",
+    "Position": "M",
+    "Price": 8
+  },
+  {
+    "Name": "Axel Witsel",
+    "Id": "5af0235a49ba5a50d8e64833",
+    "Should play": 1,
+    "Anytime": 12,
+    "2 or more": 126,
+    "Team": "Belgium",
+    "Position": "M",
+    "Price": 8
+  },
+  {
+    "Name": "Jordan Henderson",
+    "Id": "5af0235a49ba5a50d8e64886",
+    "Should play": 1,
+    "Anytime": 19,
+    "2 or more": 201,
+    "Team": "England",
+    "Position": "M",
+    "Price": 9
+  },
+  {
+    "Name": "N'Golo Kante",
+    "Id": "5af0235a49ba5a50d8e6464c",
+    "Should play": 1,
+    "Anytime": 17,
+    "2 or more": 201,
+    "Team": "France",
+    "Position": "M",
+    "Price": 8
+  }
+]

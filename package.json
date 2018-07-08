@@ -1,8 +1,14 @@
 {
   "name": "",
   "version": "",
+  "scripts": {
+    "convert": "node ./scripts/excel-to-json.js"
+  },
   "dependencies": {
     "lodash": "4.17.10",
     "uuid": "3.2.1"
+  },
+  "devDependencies": {
+    "excel-as-json": "2.0.2"
   }
 }
