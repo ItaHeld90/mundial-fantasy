@@ -1,7 +1,8 @@
 const fs = require('fs');
 const convertExcel = require('excel-as-json').processFile;
+const { period } = require('../settings');
 
-const dir = './data/period 6';
+const dir = `./data/period ${period}`;
 
 if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
@@ -9,7 +10,7 @@ if (!fs.existsSync(dir)) {
 
 ['scorers', 'defense']
     .map((name, idx) => ({
-        src: `./scripts/period-6.xlsx`,
+        src: `./scripts/period-${period}.xlsx`,
         dst: `${dir}/${name}.json`,
         sheet: idx + 1
     }))

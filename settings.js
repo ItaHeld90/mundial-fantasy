@@ -1,4 +1,4 @@
-const period = 6;
+const period = 7;
 const rootPath = './data/';
 const dataRootPath = `${rootPath}/period ${period}/`;
 
@@ -21,6 +21,7 @@ module.exports = {
     rootPath,
     dataRootPath,
     budget,
+    period,
     numPlayers,
     NUM_GENERATIONS,
     NUM_GENERATION_TEAMS,
